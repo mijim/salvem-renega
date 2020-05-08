@@ -171,7 +171,7 @@ export default function Home() {
           font-family: 'Anton';
           letter-spacing: 0.2rem;
           z-index: 30;
-          font-weight: 00;
+          font-weight: 100;
           margin: 0;
           line-height: 1.15;
           font-size: 60px;
