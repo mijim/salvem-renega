@@ -2,12 +2,15 @@ import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import { translateEs } from '../translations/es';
 import { translateCat } from '../translations/cat';
+import Fade from 'react-reveal/Fade';
+
 export default function Home() {
   const [language, setLanguage] = useState('es');
   const [showDownArrow, setShowDownArrow] = useState(true);
 
   useEffect(() => {
     setLanguage(navigator.language.indexOf('es') > -1 ? 'es' : 'cat');
+
   }, []);
 
   useEffect(() => {
@@ -31,6 +34,7 @@ export default function Home() {
 
   return (
     <>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"></link>
       <div className="container">
         <div className="header">
           <div className={`header-language ${language === 'es' ? 'selected' : ''}`} onClick={() => setLanguage('es')}>
@@ -59,17 +63,54 @@ export default function Home() {
           <img src='/background-image.svg' />
         </div>
 
-        <footer>
-          Contacta con nosotros
-      </footer>
+
 
 
       </div>
-      <div style={{ height: '1000px' }}>
+      <div className="body-container">
         <div className={`arrow-down ${showDownArrow ? '' : 'hide'}`}>
           <img src="/arrow-down.svg" />
         </div>
+        {/* <Fade right>
+          <div className="manifest-section ">
+            <div className="manifest-section-title">
+              {getCopy('lorem-title')}
+            </div>
+            <div className="manifest-section-text">
+              {getCopy('lorem')}
+            </div>
+          </div>
+        </Fade>
+        <Fade left>
+          <div className="manifest-section ">
+            <div className="manifest-section-title">
+              {getCopy('lorem-title')}
+            </div>
+            <div className="manifest-section-text">
+              {getCopy('lorem')}
+            </div>
+          </div>
+        </Fade>
+        <Fade right>
+          <div className="manifest-section ">
+            <div className="manifest-section-title">
+              {getCopy('lorem-title')}
+            </div>
+            <div className="manifest-section-text">
+              {getCopy('lorem')}
+            </div>
+          </div>
+        </Fade> */}
+        {/* <div className="images-container">
+          <img src="/arbol.svg" />
+          <img src="/excavadora.svg" />
+          <img src="/tortuga.svg" />
+        </div> */}
+
       </div>
+      <footer>
+        Contacta con nosotros
+      </footer>
 
       <style jsx>{`
          @font-face {
@@ -82,12 +123,51 @@ export default function Home() {
 
         .container {
           height: 80vh;
+          width: 100%;
           display: flex;
           flex-direction: column;
           background: #FF1B1C;
           justify-content: center;
           align-items: center;
         }
+        
+        .images-container {
+          display: flex;
+          width: 100%;
+        }
+
+        .images-container img {
+          width: 40%;
+        }
+
+        .body-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          padding: 0 10%;
+        }
+
+        .manifest-section img{
+          width: 10%;
+          left: -50px;
+          opacity: 0.4;
+        }
+
+        .manifest-section {
+          margin-bottom: 50px;
+        }
+
+        .manifest-section-title {
+          font-size: 28px;
+          font-weight: 800;
+          margin-bottom: 20px;
+        }
+
+        .manifest-section-text {
+          text-align: justify;
+        }
+
         .background-image {
           position: absolute;
           width: 100%;
@@ -145,7 +225,6 @@ export default function Home() {
         }
 
         footer {
-          position: fixed; bottom:0;
           background: #FFFFFC;
           width: 100%;
           height: 60px;
@@ -197,7 +276,7 @@ export default function Home() {
           font-weight: 100;
           margin: 0;
           line-height: 1.15;
-          font-size: 60px;
+          font-size: 9vw;
           color: white;
           animation: title-movement 2s infinite;
           animation-timing-function: ease-in-out;
@@ -271,6 +350,7 @@ export default function Home() {
           justify-content: center;
           width: 100%;
           transition: opacity 0.4s;
+          margin-bottom: 150px;
         }
 
         .arrow-down img{

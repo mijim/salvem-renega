@@ -10,6 +10,9 @@
   "dependencies": {
     "next": "9.3.6",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-reveal": "^1.2.2",
+    "react-scroll-parallax": "^2.3.2",
+    "wow.js": "^1.2.2"
   }
 }
