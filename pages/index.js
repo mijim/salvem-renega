@@ -26,7 +26,7 @@ export default function Home() {
         </div>
 
         <Head>
-          <title>¡Salvemos la renegá! 🌿</title>
+          <title>¡Salvemos la renegà! 🌿</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
