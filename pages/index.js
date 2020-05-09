@@ -4,14 +4,30 @@ import { translateEs } from '../translations/es';
 import { translateCat } from '../translations/cat';
 export default function Home() {
   const [language, setLanguage] = useState('es');
+  const [showDownArrow, setShowDownArrow] = useState(true);
 
   useEffect(() => {
     setLanguage(navigator.language.indexOf('es') > -1 ? 'es' : 'cat');
   }, []);
 
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+  }, [showDownArrow]);
+
+  const handleScroll = (ev) => {
+    if (window.scrollY > 100 && showDownArrow) {
+      setShowDownArrow(false);
+    } else if (window.scrollY <= 100 && !showDownArrow) {
+      setShowDownArrow(true);
+    }
+  }
+
+
   const getCopy = (copy) => {
     return language === 'es' ? translateEs[copy] : translateCat[copy];
   }
+
+
 
   return (
     <>
@@ -50,7 +66,7 @@ export default function Home() {
 
       </div>
       <div style={{ height: '1000px' }}>
-        <div className="arrow-down">
+        <div className={`arrow-down ${showDownArrow ? '' : 'hide'}`}>
           <img src="/arrow-down.svg" />
         </div>
       </div>
@@ -105,6 +121,10 @@ export default function Home() {
           color: rgba(255,255,255, 1);
         }
 
+        .hide {
+          opacity: 0;
+        }
+
         .subtitle {
           z-index: 30;
           color: #FFFFFC;
@@ -157,7 +177,10 @@ export default function Home() {
 
         @keyframes title-movement {
           0% {transform: scale(1);}
-          50% {transform: scale(1.05);}
+          10% {transform: scale(1.05);}
+          20% {transform: scale(1);}
+          30% {transform: scale(1.05);}
+          40% {transform: scale(1);}
           100% {transform: scale(1);}
         }
 
@@ -176,7 +199,7 @@ export default function Home() {
           line-height: 1.15;
           font-size: 60px;
           color: white;
-          animation: title-movement 0.8s infinite;
+          animation: title-movement 2s infinite;
           animation-timing-function: ease-in-out;
           margin-bottom: 20px;
         }
@@ -247,10 +270,13 @@ export default function Home() {
           display: flex;
           justify-content: center;
           width: 100%;
+          transition: opacity 0.4s;
         }
 
         .arrow-down img{
           width: 30px;
+          animation: title-movement 2s infinite;
+          animation-timing-function: ease-in-out;
         }
 
         @media (max-width: 600px) {
