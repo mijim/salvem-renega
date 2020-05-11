@@ -276,7 +276,7 @@ export default function Home() {
           font-weight: 100;
           margin: 0;
           line-height: 1.15;
-          font-size: 9vw;
+          font-size: 13vw;
           color: white;
           animation: title-movement 2s infinite;
           animation-timing-function: ease-in-out;
