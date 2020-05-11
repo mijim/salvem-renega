@@ -114,8 +114,8 @@ export default function Home() {
 
       <style jsx>{`
          @font-face {
-          font-family: 'Anton';
-          src: url('/fonts/Anton-Regular.ttf'); 
+          font-family: 'Belta';
+          src: url('/fonts/belta-bold.ttf'); 
           font-weight: normal;
           font-style: normal;
           font-display: swap;
@@ -270,7 +270,7 @@ export default function Home() {
         }
 
         .title {
-          font-family: 'Anton';
+          font-family: 'Belta';
           letter-spacing: 0.2rem;
           z-index: 30;
           font-weight: 100;
