@@ -115,7 +115,7 @@ export default function Home() {
           </div>
         </Fade>
         <div className="carousel-container">
-          <Carousel images={photosArray}
+          <Carousel images={photosArray.reverse()}
             thumb={true}
             loop={true} />
         </div>
