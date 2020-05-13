@@ -401,7 +401,7 @@ export default function Home() {
           overflow: hidden;
           margin: auto;
           width: 100%;
-          height: 500px;
+          height: 80vh;
           margin-bottom: 120px;
           border-radius: 8px;
         }
@@ -724,6 +724,15 @@ export default function Home() {
         }
         body {
           position: relative
+          animation: body-load 0.4s;
+        }
+        @keyframes body-load {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
         }
         * {
           box-sizing: border-box;

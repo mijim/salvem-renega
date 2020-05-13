@@ -1,3 +1,4 @@
 .carousel-container .carousel .carousel-main img {
     width: 100% !important;
+    object-fit: scale-down;
   }
