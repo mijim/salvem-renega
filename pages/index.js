@@ -81,7 +81,7 @@ export default function Home() {
             {t('main-subtitle')}
           </h2>
           <div className="title-button" onClick={() => window.scrollTo(0, 700)}>
-            {'SABER MAS'}
+            {'SABER MÉS'}
           </div>
 
         </main>
