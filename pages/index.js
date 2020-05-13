@@ -83,9 +83,7 @@ export default function Home() {
             <div className="manifest-section-title">
               {t('m-title-1')}
             </div>
-            <div className="manifest-section-text">
-              {t('m-text-1')}
-            </div>
+            <div className="manifest-section-text" dangerouslySetInnerHTML={{ __html: t('m-text-1') }} />
           </div>
         </Fade>
         <Fade left>
@@ -93,9 +91,7 @@ export default function Home() {
             <div className="manifest-section-title">
               {t('m-title-2')}
             </div>
-            <div className="manifest-section-text">
-              {t('m-text-2')}
-            </div>
+            <div className="manifest-section-text" dangerouslySetInnerHTML={{ __html: t('m-text-2') }} />
           </div>
         </Fade>
         <Fade right>
@@ -103,9 +99,7 @@ export default function Home() {
             <div className="manifest-section-title">
               {t('m-title-3')}
             </div>
-            <div className="manifest-section-text">
-              {t('m-text-3')}
-            </div>
+            <div className="manifest-section-text" dangerouslySetInnerHTML={{ __html: t('m-text-3') }} />
           </div>
         </Fade>
         <Fade left>
@@ -113,9 +107,7 @@ export default function Home() {
             <div className="manifest-section-title">
               {t('m-title-4')}
             </div>
-            <div className="manifest-section-text">
-              {t('m-text-4')}
-            </div>
+            <div className="manifest-section-text" dangerouslySetInnerHTML={{ __html: t('m-text-4') }} />
           </div>
         </Fade>
         <Fade right>
@@ -123,9 +115,7 @@ export default function Home() {
             <div className="manifest-section-title">
               {t('m-title-5')}
             </div>
-            <div className="manifest-section-text">
-              {t('m-text-5')}
-            </div>
+            <div className="manifest-section-text" dangerouslySetInnerHTML={{ __html: t('m-text-5') }} />
           </div>
         </Fade>
         <Fade left>
@@ -133,9 +123,7 @@ export default function Home() {
             <div className="manifest-section-title">
               {t('m-title-6')}
             </div>
-            <div className="manifest-section-text">
-              {t('m-text-6')}
-            </div>
+            <div className="manifest-section-text" dangerouslySetInnerHTML={{ __html: t('m-text-6') }} />
           </div>
         </Fade>
         <Fade right>
@@ -143,9 +131,7 @@ export default function Home() {
             <div className="manifest-section-title">
               {t('m-title-7')}
             </div>
-            <div className="manifest-section-text">
-              {t('m-text-7')}
-            </div>
+            <div className="manifest-section-text" dangerouslySetInnerHTML={{ __html: t('m-text-7') }} />
           </div>
           {/* <Fade bottom>
             <video className="start-video" controls={true} autoPlay={true}>
@@ -532,7 +518,7 @@ export default function Home() {
           font-size: 16px;
           line-height: 28px;
           text-align: center;
-          margin-bottom: 32px;
+          margin-bottom: 20px;
         }
 
         main {
