@@ -71,6 +71,18 @@ export default function Home() {
         <Head>
           <title>Salvem la renegà! 🌿</title>
           <link rel="icon" href="/favicon.ico" />
+          <div className="social-media-container">
+            <a target="_blank" href={'https://www.instagram.com/salvemlarenega/'}>
+              <img className="social-icon" src={'/instagram.svg'} />
+            </a>
+            <a target="_blank" href={'https://www.facebook.com/Salvem-la-Reneg%C3%A0-112553147114111'}>
+              <img className="social-icon" src={'/facebook.svg'} />
+            </a>
+            <a target="_blank" href={'https://www.twitter.com/salvemlarenega'}>
+              <img className="social-icon" src={'/twitter.svg'} />
+            </a>
+          </div>
+
         </Head>
 
         <main>
@@ -395,6 +407,18 @@ export default function Home() {
           display: flex;
           flex-direction: column;
           align-items: center;
+        }
+
+        .social-icon {
+          width: 40px;   
+          cursor: pointer;   
+          margin-right: 10px;
+        }
+        .social-media-container {
+          z-index: 300;
+          position: absolute;
+          left: 16px;
+          top: 16px;
         }
 
         .carousel-container {
