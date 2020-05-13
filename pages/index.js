@@ -6,6 +6,26 @@ import Fade from 'react-reveal/Fade';
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
+import Carousel from 'react-image-carousel';
+const photosArray = [
+  'DSC_0016.jpg',
+  'DSC_0017.jpg',
+  'DSC_0018.jpg',
+  'DSC_0019.jpg',
+  'DSC_0020.jpg',
+  'DSC_0023.jpg',
+  'DSC_0031.jpg',
+  'DSC_0033.jpg',
+  'DSC_0034.jpg',
+  'DSC_0038.jpg',
+  'DSC_0039.jpg',
+  'DSC_0040.jpg',
+  'DSC_0041.jpg',
+  'DSC_0043.jpg',
+  'DSC_0045.jpg',
+  'DSC_0049.jpg',
+
+]
 
 export default function Home() {
   const [language, setLanguage] = useState('es');
@@ -94,6 +114,11 @@ export default function Home() {
             <div className="manifest-section-text" dangerouslySetInnerHTML={{ __html: t('m-text-2') }} />
           </div>
         </Fade>
+        <div className="carousel-container">
+          <Carousel images={photosArray}
+            thumb={true}
+            loop={true} />
+        </div>
         <Fade right>
           <div className="manifest-section ">
             <div className="manifest-section-title">
@@ -371,7 +396,16 @@ export default function Home() {
           flex-direction: column;
           align-items: center;
         }
-        
+
+        .carousel-container {
+          overflow: hidden;
+          margin: auto;
+          width: 100%;
+          height: 500px;
+          margin-bottom: 120px;
+          border-radius: 8px;
+        }
+
         .images-container {
           width: 100%;
           position: absolute;
