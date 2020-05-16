@@ -74,7 +74,7 @@ export default function Home() {
           <div className="header-language-container">
             <Link href="/multimedia">
               <div className={`header-language`}>
-                MULTIMEDIA
+                MEDIA
               </div>
             </Link>
             <div className={`header-language ${language === 'es' ? 'selected' : ''}`} onClick={() => setLanguage('es')}>
