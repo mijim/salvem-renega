@@ -56,10 +56,17 @@ export default function Multimedia() {
                 <img src="/arbol.svg" />
             </div>
             <div className="sections-container">
-                <div className="section-title-container"> Sortim a la cope:</div>
+                <div className="section-title-container"> Sortim a la Cope:</div>
                 <audio
                     controls
                     src="/audio/audio_cope.mp3">
+                    Your browser does not support the
+                        <code>audio</code> element.
+                </audio>
+                <div className="section-title-container"> Onda Cero:</div>
+                <audio
+                    controls
+                    src="/audio/onde_cero.mp3">
                     Your browser does not support the
                         <code>audio</code> element.
                 </audio>
@@ -302,6 +309,10 @@ export default function Multimedia() {
               color: white;
               margin-bottom: 12px;
               font-size: 32px;
+          }
+
+          .sections-container audio{
+            margin-bottom: 64px;
           }
 
           .sections-container {

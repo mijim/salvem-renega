@@ -509,7 +509,7 @@ export default function Home() {
         }
 
         .background-gradient-1 {
-          background: linear-gradient(179.96deg, #63B995 20.82%, #F9D9B5 36.08%, #EDA944 48.96%, #EDA944 64.81%, #528FEA 77.35%, rgba(82, 143, 234, 0) 99.95%);
+          background: linear-gradient(179.96deg, #63B995 30.82%, #F9D9B5 36.08%, #63B995 48.96%, #63B995 64.81%, #528FEA 77.35%, rgba(82, 143, 234, 0) 99.95%);
           opacity: 0.2;
           height: 1122px;
           width: 100%;
