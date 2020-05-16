@@ -308,7 +308,7 @@ export default function Multimedia() {
             background: transparent;
             display: flex;
             justify-content: space-between;
-            margin-bottom: 90px;
+            margin-bottom: 60px;
           }
   
           .header-logo-container {
@@ -330,8 +330,8 @@ export default function Multimedia() {
           .sections-container video{
             max-width: 500px;
             z-index: 50;
-            margin-bottom: 24px;
-            max-height: 70vh;
+            margin-bottom: 64px;
+            max-height: 68vh;
             border-radius: 12px;
           }
 
