@@ -88,17 +88,7 @@ export default function Home() {
         <Head>
           <title>Salvem la renegà! 🌿</title>
           <link rel="icon" href="/favicon.ico" />
-          {/* <div className="social-media-container">
-            <a target="_blank" href={'https://www.instagram.com/salvemlarenega/'}>
-              <img className="social-icon" src={'/instagram.svg'} />
-            </a>
-            <a target="_blank" href={'https://www.facebook.com/Salvem-la-Reneg%C3%A0-112553147114111'}>
-              <img className="social-icon" src={'/facebook.svg'} />
-            </a>
-            <a target="_blank" href={'https://www.twitter.com/salvemlarenega'}>
-              <img className="social-icon" src={'/twitter.svg'} />
-            </a>
-          </div> */}
+
 
         </Head>
 
@@ -109,8 +99,18 @@ export default function Home() {
           <h2 className="subtitle">
             {t('main-subtitle')}
           </h2>
-          <div className="title-button" onClick={() => window.scrollTo(0, 700)}>
-            {'SABER MÉS'}
+          <div className="title-button">
+            <div className="social-media-container">
+              <a target="_blank" href={'https://www.instagram.com/salvemlarenega/'}>
+                <img className="social-icon" src={'/instagram.svg'} />
+              </a>
+              <a target="_blank" href={'https://www.facebook.com/Salvem-la-Reneg%C3%A0-112553147114111'}>
+                <img className="social-icon" src={'/facebook.svg'} />
+              </a>
+              <a target="_blank" href={'https://www.twitter.com/salvemlarenega'}>
+                <img className="social-icon" src={'/twitter.svg'} />
+              </a>
+            </div>
           </div>
 
         </main>
@@ -429,13 +429,16 @@ export default function Home() {
         .social-icon {
           width: 40px;   
           cursor: pointer;   
-          margin-right: 10px;
+          margin-left: 10px;
+          transition: all .2s;
         }
+
+        .social-icon:hover {
+          filter: drop-shadow(0px 0px 5px rgba(255,255,255, 0.4))
+        }
+
         .social-media-container {
           z-index: 300;
-          position: absolute;
-          left: 16px;
-          top: 16px;
         }
 
         .carousel-container {
@@ -506,7 +509,7 @@ export default function Home() {
         }
 
         .background-gradient-1 {
-          background: linear-gradient(179.96deg, #82C095 20.82%, #F9D9B5 36.08%, #EDA944 48.96%, #EDA944 64.81%, #528FEA 77.35%, rgba(82, 143, 234, 0) 99.95%);
+          background: linear-gradient(179.96deg, #63B995 20.82%, #F9D9B5 36.08%, #EDA944 48.96%, #EDA944 64.81%, #528FEA 77.35%, rgba(82, 143, 234, 0) 99.95%);
           opacity: 0.2;
           height: 1122px;
           width: 100%;
@@ -516,7 +519,7 @@ export default function Home() {
           top: 0;
         }
         .background-gradient-2{
-          background: linear-gradient(179.97deg, rgba(130, 192, 149, 0) 0.05%, #82C095 33.51%, #EDA944 62.97%, #F09E25 78.32%, rgba(240, 158, 37, 0) 99.95%);
+          background: linear-gradient(179.97deg, rgba(130, 192, 149, 0) 0.05%, #63B995 33.51%, #EDA944 62.97%, #F09E25 78.32%, rgba(240, 158, 37, 0) 99.95%);
           opacity: 0.2;
           height: 1122px;
           width: 100%;
@@ -569,8 +572,6 @@ export default function Home() {
           line-height: 24px;
           text-transform: uppercase;
           color: #63B995;
-          background: white;
-          width: 168px;
           border-radius: 2px;
           text-align: center;
           cursor: pointer;

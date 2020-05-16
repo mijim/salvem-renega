@@ -48,19 +48,10 @@ export default function Multimedia() {
             <Head>
                 <title>Salvem la renegà! 🌿</title>
                 <link rel="icon" href="/favicon.ico" />
-                {/* <div className="social-media-container">
-        <a target="_blank" href={'https://www.instagram.com/salvemlarenega/'}>
-          <img className="social-icon" src={'/instagram.svg'} />
-        </a>
-        <a target="_blank" href={'https://www.facebook.com/Salvem-la-Reneg%C3%A0-112553147114111'}>
-          <img className="social-icon" src={'/facebook.svg'} />
-        </a>
-        <a target="_blank" href={'https://www.twitter.com/salvemlarenega'}>
-          <img className="social-icon" src={'/twitter.svg'} />
-        </a>
-      </div> */}
+
 
             </Head>
+
             <div className="background-image-container">
                 <img src="/arbol.svg" />
             </div>
