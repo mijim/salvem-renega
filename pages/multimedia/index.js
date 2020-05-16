@@ -48,28 +48,39 @@ export default function Multimedia() {
             <Head>
                 <title>Salvem la renegà! 🌿</title>
                 <link rel="icon" href="/favicon.ico" />
-
-
             </Head>
 
             <div className="background-image-container">
                 <img src="/arbol.svg" />
             </div>
             <div className="sections-container">
-                <div className="section-title-container"> Sortim a la Cope:</div>
-                <audio
-                    controls
-                    src="/audio/audio_cope.mp3">
-                    Your browser does not support the
-                        <code>audio</code> element.
-                </audio>
-                <div className="section-title-container"> Onda Cero:</div>
-                <audio
-                    controls
-                    src="/audio/onde_cero.mp3">
-                    Your browser does not support the
-                        <code>audio</code> element.
-                </audio>
+                <div style={{ marginRight: '64px' }}>
+                    <div className="section-title-container"> T'expliquem que passa:</div>
+                    <video
+                        controls>
+                        <source src="/video_1.mp4" />
+                    </video>
+                </div>
+
+                <div>
+                    <div className="section-title-container"> Sortim a la Cope:</div>
+                    <audio
+                        controls
+                        src="/audio/audio_cope.mp3">
+                        Your browser does not support the
+                            <code>audio</code> element.
+                    </audio>
+                    <div className="section-title-container"> Onda Cero:</div>
+                    <audio
+                        controls
+                        src="/audio/onde_cero.mp3">
+                        Your browser does not support the
+                            <code>audio</code> element.
+                    </audio>
+                </div>
+
+
+
             </div>
             <style jsx>{`
         @font-face {
@@ -283,7 +294,6 @@ export default function Multimedia() {
           
   
           .container {
-            height: 100vh;
             width: 100vw;
             background: #423E28;
             padding: 0 16px;
@@ -307,17 +317,34 @@ export default function Multimedia() {
           .section-title-container {
               font-family: 'Belta';
               color: white;
-              margin-bottom: 12px;
+              margin-bottom: 24px;
               font-size: 32px;
           }
 
           .sections-container audio{
             margin-bottom: 64px;
+            borer-radius: 4px;
+          }
+
+          .sections-container video{
+            max-width: 500px;
+            z-index: 50;
+            margin-bottom: 24px;
+            max-height: 70vh;
+            border-radius: 12px;
           }
 
           .sections-container {
               margin-left: 10%;
+              z-index: 30;
+              display: flex;
           }
+
+          @media (max-width: 824px) {
+            .sections-container {
+                display: block;
+            }
+          } 
 
           .background-image-container {
               top: 76px;
