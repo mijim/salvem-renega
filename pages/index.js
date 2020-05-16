@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/link'
+
 import { useEffect, useState } from 'react'
 import { translateEs } from '../translations/es';
 import { translateCat } from '../translations/cat';
@@ -61,17 +63,32 @@ export default function Home() {
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"></link>
       <div className="container">
         <div className="header">
-          <div className={`header-language ${language === 'es' ? 'selected' : ''}`} onClick={() => setLanguage('es')}>
-            ES
-        </div>
-          <div className={`header-language ${language === 'cat' ? 'selected' : ''}`} onClick={() => setLanguage('cat')}>
-            CAT
-        </div>
+          <div className="header-logo-container">
+            <div className="header-title">
+              {'Salvem la renegà!'}
+            </div>
+            <div className="header-subtitle">
+              {"No a les obres d'un espai natural"}
+            </div>
+          </div>
+          <div className="header-language-container">
+            <Link href="/multimedia">
+              <div className={`header-language`}>
+                MULTIMEDIA
+              </div>
+            </Link>
+            <div className={`header-language ${language === 'es' ? 'selected' : ''}`} onClick={() => setLanguage('es')}>
+              ES
+            </div>
+            <div className={`header-language ${language === 'cat' ? 'selected' : ''}`} onClick={() => setLanguage('cat')}>
+              CAT
+            </div>
+          </div>
         </div>
         <Head>
           <title>Salvem la renegà! 🌿</title>
           <link rel="icon" href="/favicon.ico" />
-          <div className="social-media-container">
+          {/* <div className="social-media-container">
             <a target="_blank" href={'https://www.instagram.com/salvemlarenega/'}>
               <img className="social-icon" src={'/instagram.svg'} />
             </a>
@@ -81,7 +98,7 @@ export default function Home() {
             <a target="_blank" href={'https://www.twitter.com/salvemlarenega'}>
               <img className="social-icon" src={'/twitter.svg'} />
             </a>
-          </div>
+          </div> */}
 
         </Head>
 
@@ -440,6 +457,8 @@ export default function Home() {
           align-items: center;
         }
 
+
+
         .images-container img {
           width: 33%;
           margin-bottom: 100px;
@@ -523,8 +542,24 @@ export default function Home() {
           height: 60px;
           background: transparent;
           display: flex;
-          justify-content: flex-end;
+          justify-content: space-between;
           margin-bottom: 90px;
+        }
+
+        .header-logo-container {
+          cursor: pointer;
+        }
+
+        .header-title {
+          font-family: 'Belta';
+          font-size: 24px;
+          color: white;
+          margin-top: 12px;
+        }
+
+        .header-subtitle {
+          font-size: 10px;
+          color: white;
         }
 
         .title-button {
@@ -541,12 +576,14 @@ export default function Home() {
           cursor: pointer;
         }
         
-
+        .header-language-container {
+          display: flex;
+        }
         .header-language {
           z-index: 30;
           transition: all .2s;
           cursor: pointer;
-          width: 40px;
+          min-width: 40px;
           height: 40px;
           color: rgba(255,255,255, 0.4);
           display: flex;
@@ -556,8 +593,13 @@ export default function Home() {
           line-height: 18px;
           border: 1px solid rgba(255,255,255, 0.2);
           border-radius: 4px;
+          padding: 10px;
           margin-left: 8px;
           margin-top: 16px;
+        }
+
+        .header-language:hover {
+          filter: brightness(1.6);
         }
 
         .selected {
