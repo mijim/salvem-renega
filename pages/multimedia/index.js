@@ -64,7 +64,7 @@ export default function Multimedia() {
             <div className="background-image-container">
                 <img src="/arbol.svg" />
             </div>
-            <div >
+            <div className="sections-container">
                 <div className="section-title-container"> Sortim a la cope:</div>
                 <audio
                     controls
@@ -291,7 +291,6 @@ export default function Multimedia() {
             padding: 0 16px;
             display: flex;
             flex-direction: column;
-            align-items: center;
           }
 
           .header {
@@ -314,12 +313,17 @@ export default function Multimedia() {
               font-size: 32px;
           }
 
+          .sections-container {
+              margin-left: 10%;
+          }
+
           .background-image-container {
               top: 76px;
               position: fixed;
               width: 30%;
               min-width: 500px;
               opacity: 0.1;
+              right: -100px;
           }
   
           .header-title {
