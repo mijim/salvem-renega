@@ -299,7 +299,7 @@ export default function Multimedia() {
             padding: 0 16px;
             display: flex;
             flex-direction: column;
-            min-height: 100vh
+            min-height: 100vh;
           }
 
           .header {
