@@ -63,7 +63,7 @@ const urlNews = [
     link: 'https://accioecologista-agro.org/salvem-la-renega/',
     image: 'https://accioecologista-agro.org/wp-content/uploads/2020/05/1.SalvemLaReneg%C3%A0.jpg',
     description: 'El Grup Bellver, propietat de la família Calabuig, i la fundació Azul Marino han començat les obres per a construir un centre interpretatiu marí en el paratge de La Renegà d’Orpesa (La Plana Alta, Castelló).',
-    source: 'Acciò Ecologista'
+    source: 'Acció Ecologista'
   }
 ]
 export default function News() {
