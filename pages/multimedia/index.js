@@ -7,8 +7,8 @@ import { translateCat } from '../../translations/cat';
 import { useEffect, useState } from 'react';
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
-import { getLinkPreview } from 'link-preview-js';
-let called = false;
+import { urlNews } from './info_urls';
+
 
 export default function Multimedia() {
     const [language, setLanguage] = useState('es');
@@ -16,13 +16,7 @@ export default function Multimedia() {
 
     useEffect(() => {
         setLanguage(navigator.language.indexOf('es') > -1 ? 'es' : 'cat');
-        getLinkP('https://castellonplaza.com/GrupospolticossocialesyeconmicosunenfuerzasparasacaradelanteelpactoTotsperOnda');
     }, []);
-
-    const getLinkP = async (link) => {
-        const linkData = await getLinkPreview(link);
-        console.log('linkData --> ', linkData);
-    }
 
 
 
@@ -87,12 +81,33 @@ export default function Multimedia() {
                             <code>audio</code> element.
                     </audio>
                 </div>
-                <div className="section-title-container">Noticies:</div>
+
 
                 <div>
                 </div>
 
 
+            </div>
+            <div className="new-section-container">
+                <div className="section-title-container">Noticies:</div>
+                <div className="news-container">
+                    {urlNews.map((newItem) => (
+                        <div className="new-container" onClick={() => window.open(newItem.link)}>
+                            <div className="new-image">
+                                <img src={newItem.image} />
+                            </div>
+                            <div className="new-title">
+                                {newItem.title}
+                            </div>
+                            <div className="new-desc">
+                                {newItem.description}
+                            </div>
+                            <div className="new-source">
+                                {newItem.source}
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
             <script async
                 src="http://guteurls.de/guteurls.js"
@@ -317,6 +332,73 @@ export default function Multimedia() {
             flex-direction: column;
             min-height: 100vh;
           }
+          .new-section-container {
+            margin-left: 8%;
+          }
+
+          .news-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 32px;
+          }
+
+          @media (max-width: 1200px) {
+            .news-container {
+                grid-template-columns: 1fr 1fr;
+            }
+          } 
+
+          @media (max-width: 800px) {
+            .news-container {
+                grid-template-columns: 1fr;
+            }
+          } 
+          
+
+          .new-container {
+              cursor: pointer;
+              margin-bottom: 32px;
+              background: rgba(255,255,255,0.1);
+              border-radius: 10px;
+              max-width: 340px;
+              width: 80vw;
+          }
+
+          .new-source {
+              border-top: 0.5px solid rgba(255,255,255,0.3);
+              text-align: right;
+              padding: 4px;
+              padding-right: 10px;
+              font-size: 10px;
+              color: rgba(255,255,255,0.6);
+          }
+
+          .new-image img{
+            max-width: 340px;
+            width: 80vw;
+            margin-bottom: 8px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+          }
+
+          .new-title {
+            max-width: 340px;
+            color: white;
+            margin-bottom: 8px;
+            margin-right: 12px;
+            margin-left: 12px;
+          }
+
+          .new-desc {
+            max-width: 340px;
+            font-weight: 200;
+            font-size: 12px;
+            color: white;
+            margin-right: 12px;
+            margin-left: 12px;
+            opacity: 0.8;
+            padding-bottom: 16px;
+          }
 
           .header {
             width: 100%;
@@ -347,12 +429,12 @@ export default function Multimedia() {
             max-width: 500px;
             z-index: 50;
             margin-bottom: 64px;
-            max-height: 68vh;
+            max-height: 54vh;
             border-radius: 12px;
           }
 
           .sections-container {
-              margin-left: 10%;
+              margin-left: 8%;
               z-index: 30;
               display: flex;
           }
