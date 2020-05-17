@@ -354,6 +354,7 @@ export default function News() {
           }
           .new-section-container {
             margin-left: 8%;
+            z-index: 30;
           }
 
           .news-container {
