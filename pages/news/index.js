@@ -9,143 +9,131 @@ import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
 
 const urlNews = [
-    {
-        title: 'La Renegà: Un observatorio marítimo en pleno litoral de Orpesa: ¿el nuevo Marina d’Or?',
-        link: 'https://www.publico.es/sociedad/renega-centro-interpretacion-mediterraneo-orpesa-nuevo-marina-d-or.html',
-        image: 'https://www.publico.es/uploads/2020/05/16/5ebff43ec3e60.jpeg',
-        description: 'Movimientos ecologistas denuncian que la construcción de un "observatorio marino" en una parcela urbana del litoral de Orpesa esconde como verdadera finalidad la resurrección de antiguos proyectos urbanísticos paralizados por la crisis.',
-        source: 'Público'
-    },
-    {
-        title: 'Compromís pide "total transparencia" sobre el proyecto del entorno de la Renegà',
-        link: 'https://castellonplaza.com/compromis-pide-total-transparencia-sobre-el-proyecto-del-entorno-de-la-renega',
-        image: 'https://castellonplaza.com/public/Image/2020/5/WhatsAppImage2020-05-13at12.09.11_NoticiaAmpliada.jpg',
-        description: '',
-        source: 'Castellón Plaza'
-    },
-    {
-        title: 'Polèmica per l’inici de les obres d’un centre interpretatiu prop de la Renegada, a Orpesa',
-        link: 'https://apuntmedia.es/va/noticies/societat/polemica-per-l-inici-de-les-obres-d-un-centre-interpretatiu-prop-de-la-renegada-a-orpesa',
-        image: 'https://statics.apuntmedia.es/news/IMG0000074968_1589220691.jpeg',
-        description: '“Salvem la Renegà” ha aconseguit més de 10.000 firmes per a evitar “l’urbanisme salvatge” als voltants del paratge natural.',
-        source: 'À Punt'
-    },
-    {
-        title: 'Más de 7.400 firmas recogidas para paralizar un proyecto en Bellver, junto a la Renegà',
-        link: 'https://cadenaser.com/emisora/2020/05/10/radio_castellon/1589114336_703730.html',
-        image: 'https://cadenaser00.epimg.net/ser/imagenes/2020/05/10/radio_castellon/1589114336_703730_1589114525_noticia_normal_recorte1.jpg',
-        description: 'Un proyecto defendido como medio ambiental y divulgativo, que modificará más de un kilómetro de paraje natural de calas y bosque mediterráneo',
-        source: 'Cadena SER'
-    }
+  {
+    title: 'La Renegà: Un observatorio marítimo en pleno litoral de Orpesa: ¿el nuevo Marina d’Or?',
+    link: 'https://www.publico.es/sociedad/renega-centro-interpretacion-mediterraneo-orpesa-nuevo-marina-d-or.html',
+    image: 'https://www.publico.es/uploads/2020/05/16/5ebff43ec3e60.jpeg',
+    description: 'Movimientos ecologistas denuncian que la construcción de un "observatorio marino" en una parcela urbana del litoral de Orpesa esconde como verdadera finalidad la resurrección de antiguos proyectos urbanísticos paralizados por la crisis.',
+    source: 'Público'
+  },
+  {
+    title: 'Compromís pide "total transparencia" sobre el proyecto del entorno de la Renegà',
+    link: 'https://castellonplaza.com/compromis-pide-total-transparencia-sobre-el-proyecto-del-entorno-de-la-renega',
+    image: 'https://castellonplaza.com/public/Image/2020/5/WhatsAppImage2020-05-13at12.09.11_NoticiaAmpliada.jpg',
+    description: '',
+    source: 'Castellón Plaza'
+  },
+  {
+    title: 'Polèmica per l’inici de les obres d’un centre interpretatiu prop de la Renegada, a Orpesa',
+    link: 'https://apuntmedia.es/va/noticies/societat/polemica-per-l-inici-de-les-obres-d-un-centre-interpretatiu-prop-de-la-renegada-a-orpesa',
+    image: 'https://statics.apuntmedia.es/news/IMG0000074968_1589220691.jpeg',
+    description: '“Salvem la Renegà” ha aconseguit més de 10.000 firmes per a evitar “l’urbanisme salvatge” als voltants del paratge natural.',
+    source: 'À Punt'
+  },
+  {
+    title: 'Más de 7.400 firmas recogidas para paralizar un proyecto en Bellver, junto a la Renegà',
+    link: 'https://cadenaser.com/emisora/2020/05/10/radio_castellon/1589114336_703730.html',
+    image: 'https://cadenaser00.epimg.net/ser/imagenes/2020/05/10/radio_castellon/1589114336_703730_1589114525_noticia_normal_recorte1.jpg',
+    description: 'Un proyecto defendido como medio ambiental y divulgativo, que modificará más de un kilómetro de paraje natural de calas y bosque mediterráneo',
+    source: 'Cadena SER'
+  },
+  {
+    title: 'Gecén denuncia que el Centro de Interpretación de Oropesa esconde un macroproyecto con viviendas y hotel',
+    link: 'https://cadenaser.com/emisora/2020/05/11/radio_castellon/1589211377_279006.html',
+    image: 'https://cadenaser00.epimg.net/ser/imagenes/2020/05/11/radio_castellon/1589211377_279006_1589211460_noticia_normal_recorte1.jpg',
+    description: 'La organización ecologista pide al Ayuntamiento de Oropesa que revise el Plan General de Ordenación Urbana, que fue aprobado en 1982',
+    source: 'Cadena SER'
+  },
+  {
+    title: 'Intersindical exigeix la protecció de la platja de la Renegà',
+    link: 'https://intersindical.org/salut_laboral/article/intersindical_exigeix_la_proteccio_de_la_platja_de_la_renega',
+    image: 'https://intersindical.org/images/imatges/generiques/Unknown-21.jpeg',
+    description: 'El Sindicat rebutja la reactivació dels projectes urbanístics d’aquesta zona d’Orpesa (la Plana Alta) i demana la seua immediata paralització en considerar que atempten contra la biodiversitat i el paisatge.',
+    source: 'Intersindical Valenciana'
+  },
+  {
+    title: 'Arrancan con polémica las obras de un centro interpretativo junto a la Renegà, en Oropesa',
+    link: 'https://castellonplaza.com/ArrancanconpolmicalasobrasdeuncentrointerpretativojuntoalaRenegenOropesa',
+    image: 'https://castellonplaza.com/public/Image/2020/5/slide1_NoticiaAmpliada.jpg',
+    description: '',
+    source: 'Castellón Plaza'
+  },
+  {
+    title: 'AE-Agró mostra el seu suport a esta campanya per a evitar unes obres que destruiran un dels paratges més importants d’Orpesa',
+    link: 'https://accioecologista-agro.org/salvem-la-renega/',
+    image: 'https://accioecologista-agro.org/wp-content/uploads/2020/05/1.SalvemLaReneg%C3%A0.jpg',
+    description: 'El Grup Bellver, propietat de la família Calabuig, i la fundació Azul Marino han començat les obres per a construir un centre interpretatiu marí en el paratge de La Renegà d’Orpesa (La Plana Alta, Castelló).',
+    source: 'Acciò Ecologista'
+  }
 ]
-export default function Multimedia() {
-    const [language, setLanguage] = useState('es');
-    const { t } = useTranslation();
+export default function News() {
+  const [language, setLanguage] = useState('es');
+  const { t } = useTranslation();
 
-    useEffect(() => {
-        setLanguage(navigator.language.indexOf('es') > -1 ? 'es' : 'cat');
-    }, []);
+  useEffect(() => {
+    setLanguage(navigator.language.indexOf('es') > -1 ? 'es' : 'cat');
+  }, []);
 
+  return (
+    <div className="container">
+      <div className="header">
+        <Link href="/">
+          <div className="header-logo-container">
+            <div className="header-title">
+              {'Salvem la renegà!'}
+            </div>
+            <div className="header-subtitle">
+              {"No a les obres d'un espai natural"}
+            </div>
+          </div>
+        </Link>
+        <div className="header-language-container">
+          <Link href="/">
 
-
-    return (
-        <div className="container">
-            <div className="header">
-                <Link href="/">
-                    <div className="header-logo-container">
-                        <div className="header-title">
-                            {'Salvem la renegà!'}
-                        </div>
-                        <div className="header-subtitle">
-                            {"No a les obres d'un espai natural"}
-                        </div>
+            <div className={`header-language`}>
+              INICI
+                 </div>
+          </Link>
+          <Link href="/multimedia">
+            <div className={`header-language`}>
+              MEDIA
                     </div>
-                </Link>
-                <div className="header-language-container">
-                    <Link href="/">
-                        <div className={`header-language`}>
-                            INICI
-                         </div>
-                    </Link>
-                    <Link href="/noticies">
-                        <div className={`header-language`}>
-                            NOTICIES
-                         </div>
-                    </Link>
-                    {/* <div className={`header-language ${language === 'es' ? 'selected' : ''}`} onClick={() => setLanguage('es')}>
-                        ES
+          </Link>
         </div>
-                    <div className={`header-language ${language === 'cat' ? 'selected' : ''}`} onClick={() => setLanguage('cat')}>
-                        CAT
-        </div>*/}
-                </div>
+        <Head>
+          <title>Salvem la renegà! 🌿</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+      </div>
+      <div className="background-image-container">
+        <img src="/tortuga.svg" />
+      </div>
+      <div className="new-section-container">
+        <div className="section-title-container">Noticies i Articles:</div>
+        <div className="news-container">
+          {urlNews.map((newItem) => (
+            <div className="new-container" onClick={() => window.open(newItem.link)}>
+              <div className="new-image">
+                <img src={newItem.image} />
+              </div>
+              <div className="new-title">
+                {newItem.title}
+              </div>
+              <div className="new-desc">
+                {newItem.description}
+              </div>
+              <div className="new-source">
+                {newItem.source}
+              </div>
             </div>
-            <Head>
-                <title>Salvem la renegà! 🌿</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-
-            <div className="background-image-container">
-                <img src="/arbol.svg" />
-            </div>
-            <div className="sections-container">
-                <div style={{ marginRight: '64px' }}>
-                    <div className="section-title-container"> T'expliquem que passa:</div>
-                    <video
-                        controls>
-                        <source src="/video_1.mp4" />
-                    </video>
-                </div>
-
-                <div style={{ marginRight: '64px' }}>
-                    <div className="section-title-container"> Sortim a la Cope:</div>
-                    <audio
-                        controls
-                        src="/audio/audio_cope.mp3">
-                        Your browser does not support the
-                            <code>audio</code> element.
-                    </audio>
-                    <div className="section-title-container"> Onda Cero:</div>
-                    <audio
-                        controls
-                        src="/audio/onde_cero.mp3">
-                        Your browser does not support the
-                            <code>audio</code> element.
-                    </audio>
-                </div>
-
-
-                <div>
-                </div>
-
-
-            </div>
-            {/* <div className="new-section-container">
-                <div className="section-title-container">Noticies:</div>
-                <div className="news-container">
-                    {urlNews.map((newItem) => (
-                        <div className="new-container" onClick={() => window.open(newItem.link)}>
-                            <div className="new-image">
-                                <img src={newItem.image} />
-                            </div>
-                            <div className="new-title">
-                                {newItem.title}
-                            </div>
-                            <div className="new-desc">
-                                {newItem.description}
-                            </div>
-                            <div className="new-source">
-                                {newItem.source}
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div> */}
-            <script async
-                src="http://guteurls.de/guteurls.js"
-                selector=".aCssClass">
-            </script>
-            <style jsx>{`
+          ))}
+        </div>
+      </div>
+      <script async
+        src="http://guteurls.de/guteurls.js"
+        selector=".aCssClass">
+      </script>
+      <style jsx>{`
         @font-face {
             font-family: 'Belta';
             src: url('/fonts/belta-bold.ttf'); 
@@ -372,6 +360,7 @@ export default function Multimedia() {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 32px;
+            margin-bottom: 32px;
           }
 
           @media (max-width: 1200px) {
@@ -461,8 +450,8 @@ export default function Multimedia() {
           .sections-container video{
             max-width: 500px;
             z-index: 50;
-            margin-bottom: 20px;
-            max-height: 68vh;
+            margin-bottom: 64px;
+            max-height: 54vh;
             border-radius: 12px;
           }
 
@@ -481,7 +470,7 @@ export default function Multimedia() {
           .background-image-container {
               top: 76px;
               position: fixed;
-              width: 30%;
+              width: 60%;
               min-width: 500px;
               opacity: 0.1;
               right: -100px;
@@ -529,7 +518,7 @@ export default function Multimedia() {
             color: rgba(255,255,255, 1);
           }
         `}</style>
-            <style jsx global>{`
+      <style jsx global>{`
         html,
         body {
           padding: 0;
@@ -556,26 +545,5 @@ export default function Multimedia() {
           box-sizing: border-box;
         }
       `}</style>
-        </div>);
+    </div>);
 }
-
-
-i18n
-    .use(initReactI18next) // passes i18n down to react-i18next
-    .init({
-        resources: {
-            cat: { translation: translateCat },
-            es: { translation: translateEs }
-        },
-        react: {
-            transSupportBasicHtmlNodes: true,
-            transKeepBasicHtmlNodesFor: ['br', 'strong', 'i'],
-            useSuspense: true,
-        },
-        lng: "cat",
-        fallbackLng: "cat",
-        transEmptyNodeValue: '',
-        interpolation: {
-            escapeValue: false
-        }
-    });

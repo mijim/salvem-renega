@@ -77,12 +77,17 @@ export default function Home() {
                 MEDIA
               </div>
             </Link>
-            <div className={`header-language ${language === 'es' ? 'selected' : ''}`} onClick={() => setLanguage('es')}>
+            <Link href="/noticies">
+              <div className={`header-language`}>
+                NOTICIES
+              </div>
+            </Link>
+            {/* <div className={`header-language ${language === 'es' ? 'selected' : ''}`} onClick={() => setLanguage('es')}>
               ES
             </div>
             <div className={`header-language ${language === 'cat' ? 'selected' : ''}`} onClick={() => setLanguage('cat')}>
               CAT
-            </div>
+            </div> */}
           </div>
         </div>
         <Head>
