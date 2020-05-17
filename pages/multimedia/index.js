@@ -7,6 +7,8 @@ import { translateCat } from '../../translations/cat';
 import { useEffect, useState } from 'react';
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
+import { getLinkPreview } from 'link-preview-js';
+let called = false;
 
 export default function Multimedia() {
     const [language, setLanguage] = useState('es');
@@ -14,7 +16,14 @@ export default function Multimedia() {
 
     useEffect(() => {
         setLanguage(navigator.language.indexOf('es') > -1 ? 'es' : 'cat');
+        getLinkP('https://castellonplaza.com/GrupospolticossocialesyeconmicosunenfuerzasparasacaradelanteelpactoTotsperOnda');
     }, []);
+
+    const getLinkP = async (link) => {
+        const linkData = await getLinkPreview(link);
+        console.log('linkData --> ', linkData);
+    }
+
 
 
     return (
@@ -62,7 +71,7 @@ export default function Multimedia() {
                     </video>
                 </div>
 
-                <div>
+                <div style={{ marginRight: '64px' }}>
                     <div className="section-title-container"> Sortim a la Cope:</div>
                     <audio
                         controls
@@ -78,10 +87,17 @@ export default function Multimedia() {
                             <code>audio</code> element.
                     </audio>
                 </div>
+                <div className="section-title-container">Noticies:</div>
 
+                <div>
+                </div>
 
 
             </div>
+            <script async
+                src="http://guteurls.de/guteurls.js"
+                selector=".aCssClass">
+            </script>
             <style jsx>{`
         @font-face {
             font-family: 'Belta';

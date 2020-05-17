@@ -9,6 +9,5 @@ export default function MyApp({ Component, pageProps }) {
     useEffect(() => {
         setLocation(window.location)
     }, []);
-    if (location && location.href.indexOf('multimedia') > -1) return <Multimedia />
-    return <Home {...pageProps} />
+    return (location && location.href.indexOf('multimedia') > -1 ? <Multimedia /> : <Home {...pageProps} />);
 }
