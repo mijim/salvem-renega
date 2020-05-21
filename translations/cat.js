@@ -10,7 +10,7 @@ export const translateCat = {
     'm-title-3': 'TENIM ANTECEDENTS?',
     'm-text-3': `<b>No és la primera vegada</b> que aquesta empresa llança un projecte amb l’objectiu de construir en la Renegà. Fa anys ja van tractar de dur a terme un <b>passeig marítim</b> directament a la zona declarada <b>d'interès comunitari (LIC).</b>`,
     'm-title-4': 'QUÈ SABEM DE LA FUNDACIÓ AZUL MARINO?',
-    'm-text-4': 'Sabem que es troba <b>darrere</b> del <b>projecte</b> i que s’ha creat ad hoc per justificar-lo. Té la seua <b>seu jurídica</b> a <b>Panamà</b>, ha estat registrada al març del 2020, el seu lloc <b>web no</b> està encara <b>operatiu</b> i la <b>presència en xarxes socials</b> és <b>residual.</b>',
+    'm-text-4': 'Sabem que es troba <b>darrere</b> del <b>projecte</b> i que s’ha creat ad hoc per justificar-lo. Ha estat registrada al març del 2020, el seu lloc <b>web no</b> està encara <b>operatiu</b> i la <b>presència en xarxes socials</b> és <b>residual.</b>',
     'm-title-5': 'TENEN DRET A CONSTRUIR?',
     'm-text-5': `Aquesta suposada intenció ambientalista respon a les<b>dificultats</b> que troba el<b> Grup Bellver</b> per a <b>construir en primera línea</b>, en tant que la zona que comprèn el <b>barranc de Bellver</b> i la <b>torre de la Colomera</b>, on es troba la platja nudista, és considerat com  <b>Lloc d'Interès Comunitari (LIC)</b>. En principi, aquest fet no determina que no siga urbanitzable, però sí <b>existeix jurisprudència</b>, per part del <b>TSJCV</b>, en terme de que <b>l’espai natural protegit està per damunt de la normativa de l’espai urbanístic comunitari.</b>`,
     'm-title-6': 'QUÈ SABEM DE L’AJUNTAMENT D’ORPESA?',
