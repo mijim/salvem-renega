@@ -123,6 +123,10 @@ export default function Home() {
             </div>
           </div>
 
+          <div className="sign-button" onClick={() => window.open('https://comunicacion489067.typeform.com/to/WU4fBx')}>
+            {'Firma ara'}
+          </div>
+
         </main>
         <Parallax y={[-10, 24]}  >
           <div className="background-image">
@@ -203,6 +207,7 @@ export default function Home() {
             </video>
           </Fade> */}
         </Fade>
+
 
         {/* <div className="images-container">
           <img src="/arbol.svg" />
@@ -568,6 +573,23 @@ export default function Home() {
           font-size: 24px;
           color: white;
           margin-top: 12px;
+        }
+
+        .sign-button {
+          margin-top: 12px;
+          font-size: 24px;
+          cursor: pointer;
+          color: #63B995;
+          background: white;
+          border-radius: 5px;
+          padding: 10px;
+          padding-left: 15px;
+          padding-right: 15px;
+          transition: box-shadow .3s ease-in-out;
+        }
+
+        .sign-button:hover {
+          box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
         }
 
         .header-subtitle {
