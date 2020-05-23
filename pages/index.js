@@ -123,7 +123,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="sign-button" onClick={() => window.open('https://comunicacion489067.typeform.com/to/WU4fBx')}>
+          <div className="sign-button" onClick={() => window.open('https://www.change.org/p/no-al-centro-interpretativo-marino-en-la-reneg%C3%A0-de-oropesa-lareneganosetoca')}>
             {'Firma ara'}
           </div>
 
