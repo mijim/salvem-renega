@@ -72,6 +72,11 @@ export default function Home() {
             </div>
           </div>
           <div className="header-language-container">
+            <Link href="/manifest">
+              <div className={`header-language`}>
+                MANIFEST
+              </div>
+            </Link>
             <Link href="/multimedia">
               <div className={`header-language`}>
                 MEDIA
