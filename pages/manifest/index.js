@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
 import { Document, Page } from 'react-pdf';
+import { ReactTypeformEmbed } from 'react-typeform-embed';
 
 export default function Manifest() {
     const [pageNumber, setPageNumber] = useState(1);
@@ -101,6 +102,12 @@ export default function Manifest() {
                 </div>
 
             </div>
+            <div className="contact-container">
+                <div className="contact-title">{language === 'es' ? `Ayúdanos a conseguir nuestro objetivo` : `Ajuda'ns a aconseguir el nostre objectiu:`}</div>
+                <div className="typeform-widget" data-url="https://comunicacion489067.typeform.com/to/WU4fBx" style={{ width: '100%', height: '300px', borderRadius: '10px', maxWidth: '800px' }}></div> <script> {(function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })()} </script> <div style={{ fontFamily: 'Sans-Serif', fontSize: '12px', color: '#999', opacity: 0.5, paddingTop: '5px' }}>  </div>
+            </div>
+
+
             <script async
                 src="http://guteurls.de/guteurls.js"
                 selector=".aCssClass">
@@ -324,8 +331,53 @@ export default function Manifest() {
             flex-direction: column;
             min-height: 100vh;
           }
+
+          .typeform-widget {
+              border-radius: 10px;
+              opacity: 0.9;
+          }
+          
+          .contact-container {
+              display: flex; 
+              align-items: center;
+              flex-direction: column;
+              margin-bottom: 50px;
+          }
+          
+          
+          .contact-title {
+            font-size: 32px;
+            margin-bottom: 16px;
+            font-family: 'Belta';
+            color: white;
+          }
+
+          .contact-button {
+            z-index: 30;
+            transition: all .2s;
+            cursor: pointer;
+            min-width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            line-height: 18px;
+            border-radius: 4px;
+            padding: 10px;
+            margin-left: 8px;
+            margin-top: 16px;
+            background: #63B995;
+            margin-bottom: 100px;
+          }
+
+          .contact-button a{
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+          }
+
           .new-section-container {
-            margin-bottom: 300px;
+            margin-bottom: 100px;
             z-index: 30;
             display: flex;
             justify-content: center;
@@ -365,6 +417,7 @@ export default function Manifest() {
             font-size: 32px;
             text-align: center;
             margin-bottom: 42px;
+            color: white;
           }
 
           .manifest-container {
