@@ -54,7 +54,7 @@ export default function Manifest() {
             <div className="new-section-container">
                 <div className="manifest-container">
                     <div className="manifest-title">
-                        {'SALVEMOS PLAYA BELLVER, LA RENEGÀ, LITORAL DE OROPESA DEL MAR'}
+                        {language === 'es' ? 'SALVEMOS PLAYA BELLVER, LA RENEGÀ, LITORAL DE OROPESA DEL MAR' : 'SALVEM PLATJA BELLVER, LA RENEGÀ, LITORAL D’ORPESA'}
                     </div>
                     <div className="manifest-paragraf">
                         {language === 'es' ? 'Las organizaciones abajo firmantes rechazamos la reactivación del urbanismo salvaje en el municipio de Oropesa del Mar (Castelló) y nos oponemos a los nuevos proyectos urbanísticos del Plan Parcial Torre de Bellver y a la construcción de un núcleo zoológico dedicado a las tortugas marinas. El anuncio del proyecto este mes de mayo y el inicio de las obras han coincidido. No ha habido ningún margen de maniobra para la ciudadanía. Exigimos transparencia y acceso a la información pública para conocer el proceso que se ha llevado a cabo. Hoy contamos con el apoyo de cerca de 20.000 firmas.' : `Les organitzacions sotasignants rebutgem la reactivació de l’urbanisme salvatge al municipi d’Orpesa (Castelló) i ens oposem als nous projectes urbanístics del Pla Parcial Torre de Bellver i a la construcció d’un nucli zoològic dedicat a les tortugues marines. L'anunci del projecte aquest mes de maig i l'inici de les obres han coincidit. No n'hi ha hagut cap marge de maniobra per la ciutadania. Exigim transparència i accés a la informació pública per conéixer el procés que s'ha dut a terme. Avui al voltant de 20.000 signatures ens recolzen.`}
