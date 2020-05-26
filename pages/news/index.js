@@ -10,6 +10,13 @@ import { useTranslation, initReactI18next } from "react-i18next";
 
 const urlNews = [
   {
+    title: 'Els germans Calabuig Gimeno investigats per corrupció, impulsen un projecte urbanístic a la Serra de la Renegà',
+    link: 'https://directa.cat/els-germans-calabuig-gimeno-investigats-per-corrupcio-impulsen-un-projecte-urbanistic-a-la-serra-de-la-renega/',
+    image: 'https://directa.cat/app/uploads/2020/05/WEB_RENEGA%CC%80-011-1024x683.jpg',
+    description: 'La febre urbanística de principis dels 2000 a les costes valencianes no va perdonar aquests territoris verges, que tot i el seu valor natural consten com a urbanitzables des de l’aprovació del Pla General d’Ordenació Urbanística (PGOU)',
+    source: 'Directa'
+  },
+   {
     title: 'La Renegà: Un observatorio marítimo en pleno litoral de Orpesa: ¿el nuevo Marina d’Or?',
     link: 'https://www.publico.es/sociedad/renega-centro-interpretacion-mediterraneo-orpesa-nuevo-marina-d-or.html',
     image: 'https://www.publico.es/uploads/2020/05/16/5ebff43ec3e60.jpeg',
