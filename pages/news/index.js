@@ -14,7 +14,7 @@ const urlNews = [
     link: 'https://directa.cat/els-germans-calabuig-gimeno-investigats-per-corrupcio-impulsen-un-projecte-urbanistic-a-la-serra-de-la-renega/',
     image: 'https://directa.cat/app/uploads/2020/05/WEB_RENEGA%CC%80-011-1024x683.jpg',
     description: 'La febre urbanística de principis dels 2000 a les costes valencianes no va perdonar aquests territoris verges, que tot i el seu valor natural consten com a urbanitzables des de l’aprovació del Pla General d’Ordenació Urbanística (PGOU).',
-    source: 'Directa'
+    source: 'La Directa'
   },
   {
     title: 'Crece el descontento ecologista y vecinal por el avance de las obras en el entorno de la Renegà ',
@@ -26,9 +26,9 @@ const urlNews = [
   {
     title: 'En plena emergencia climática, Oropesa quiere romper el mar',
     link: 'https://www.elperiodic.com/opinion/yo-animal/plena-emergencia-climatica-oropesa-quiere-romper_7372',
-    image: 'https://www.oropesadelmarturismo.com/ver/856/Playa-de-La-Reneg%C3.html',
+    image: 'https://turismodecastellon.com/uploads/ficherosAntiguos/imagenes/playa_la_renega_1.jpg',
     description: 'La Renegá es una zona protegida del litoral marino del pueblo de Oropesa, Castellón. Casi 20.000 firmas se han recogido ya en la plataforma Change.org',
-    source: 'El periòdic'
+    source: 'El Periòdic'
   },
    {
     title: 'La Renegà: Un observatorio marítimo en pleno litoral de Orpesa: ¿el nuevo Marina d’Or?',
@@ -44,13 +44,7 @@ const urlNews = [
     description: '',
     source: 'Castellón Plaza'
   },
-  {
-    title: 'Compromís exige "transparencia absoluta" a Oropesa sobre el centro marino',
-    link: 'https://castellonplaza.com/compromis-pide-total-transparencia-sobre-el-proyecto-del-entorno-de-la-renega',
-    image: 'https://castellonplaza.com/public/Image/2020/5/WhatsAppImage2020-05-13at12.09.11_NoticiaAmpliada.jpg',
-    description: '',
-    source: 'Castellón Plaza'
-  },
+ 
   {
     title: 'Polèmica per l’inici de les obres d’un centre interpretatiu prop de la Renegada, a Orpesa',
     link: 'https://www.lavanguardia.com/vida/20200514/481144776760/compromis-exige-transparencia-absoluta-a-oropesa-sobre-el-centro-marino.html',
@@ -61,7 +55,7 @@ const urlNews = [
   {
     title: 'Denuncian a Costa Bellver por utilizar la naturaleza como reclamo inmobiliario',
     link: 'https://www.ecologistasenaccion.org/143483/denuncian-a-costa-bellver-por-utilizar-la-naturaleza-como-reclamo-inmobiliario/',
-    image: 'https://www.ecologistasenaccion.org/wp-content/uploads/2020/05/WhatsApp-Image-2020-05-12-at-11.51.29.jpeg',
+    image: '',
     description: 'Ecologistas en Acción rechaza la reactivación del urbanismo salvaje en el municipio de Oropesa del Mar (Castellón) y se opone a los nuevos proyectos urbanísticos del Plan Parcial Torre de Bellver y a la construcción del núcleo zoológico dedicado a las tortugas marinas.',
     source: 'Ecologistas en Acción'
   },
