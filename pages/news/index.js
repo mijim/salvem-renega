@@ -10,6 +10,13 @@ import { useTranslation, initReactI18next } from "react-i18next";
 
 const urlNews = [
   {
+    title: 'Salvem la Renegà denuncia actuaciones ilegales en la zona protegida del litoral de Oropesa',
+    link: 'https://castellonplaza.com/SalvemlaRenegdenunciaactuacionesilegalesenlazonaprotegidadellitoraldeOropesa',
+    image: 'https://castellonplaza.com/public/Image/2020/6/2143d58f-f2a7-4f64-b532-3c53c0fcf6a4_forCrop.jpg',
+    description: 'La febre urbanística de principis dels 2000 a les costes valencianes no va perdonar aquests territoris verges, que tot i el seu valor natural consten com a urbanitzables des de l’aprovació del Pla General d’Ordenació Urbanística (PGOU).',
+    source: 'Castellón Plaza'
+  },
+  {
     title: 'Els germans Calabuig Gimeno investigats per corrupció, impulsen un projecte urbanístic a la Serra de la Renegà',
     link: 'https://directa.cat/els-germans-calabuig-gimeno-investigats-per-corrupcio-impulsen-un-projecte-urbanistic-a-la-serra-de-la-renega/',
     image: 'https://directa.cat/app/uploads/2020/05/WEB_RENEGA%CC%80-011-1024x683.jpg',
