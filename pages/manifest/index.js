@@ -1,7 +1,6 @@
 
 import Head from 'next/head'
 import Link from 'next/link'
-import axios from 'axios';
 
 import { translateEs } from '../../translations/es';
 import { translateCat } from '../../translations/cat';
