@@ -96,7 +96,10 @@ export default function Manifest() {
           <a target='_blank' href={'https://www.ecologistasenaccion.org/federaciones/pais-valencia/castello/la-vall-duixo/'}> {'L’ARQUET-Ecologistes en Acció de la Vall d’Uixó'} </a>
           <a target='_blank' href={'https://www.gecen.net'}> {'GECEN-Grup d’Estudis i Conservació dels Espais Naturals'} </a>
           <a target='_blank' href={'https://prodesert.org/'}> {'Asociación Ecologista Pro Desert​'} </a>
-
+          <a target='_blank' href={'https://www.intersindical.org/'}> {'Intersindical Valenciana​'} </a>
+          <a target='_blank' href={'https://fridaysforfuturecastello.wordpress.com/vinaros/'}> {'Fridays for Future - Joventut pel Clima Vinaròs'} </a>
+          <a target='_blank' href={'https://www.endavant.org/'}> {'Endavant (OSAN)​'} </a>
+          <p> Número de personas físicas individuales: 83</p>
         </div>
 
       </div>
