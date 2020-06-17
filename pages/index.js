@@ -124,7 +124,10 @@ export default function Home() {
           </div>
 
           <div className="sign-button" onClick={() => window.open('https://www.change.org/p/no-al-centro-interpretativo-marino-en-la-reneg%C3%A0-de-oropesa-lareneganosetoca')}>
-            {'Firma ara'}
+            {'Firma NO AL CENTRE INTERPRETATIU'}
+          </div>
+          <div className="sign-button" onClick={() => window.open('https://www.change.org/p/consellera-de-agricultura-desarrollo-rural-emergencia-clim%C3%A1tica-y-transici%C3%B3n-ecol%C3%B3gica-declaraci%C3%B3n-de-paisaje-protegido-sierra-y-acantilados-de-oropesa-7b4acbf2-864b-498f-b439-0fcfeb1fbd75?recruiter=40348015&utm_source=share_petition&utm_campaign=psf_combo_share_initial&utm_medium=whatsapp&utm_content=washarecopy_22771468_es-ES%3A3&recruited_by_id=8e364f30-4f6b-0130-a98c-3c764e046f10')}>
+            {'Firma DECLARACIÓ PAISATGE PROTEGIT'}
           </div>
 
         </main>
