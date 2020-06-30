@@ -594,6 +594,15 @@ export default function Home() {
           transition: box-shadow .3s ease-in-out;
         }
 
+        @media (max-width: 764px) {
+          .sign-button {
+            font-size: 16px;
+            padding: 6px;
+            padding-left: 8px;
+            padding-right: 8px;
+          }
+        }
+
         .sign-button:hover {
           box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
         }
