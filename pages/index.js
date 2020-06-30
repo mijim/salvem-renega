@@ -32,6 +32,7 @@ const photosArray = [
 export default function Home() {
   const [language, setLanguage] = useState('es');
   const [showDownArrow, setShowDownArrow] = useState(true);
+  const [donationOpen, setDonationOpen] = useState(true);
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -220,7 +221,19 @@ export default function Home() {
           <img src="/excavadora.svg" />
           <img src="/tortuga.svg" />
         </div> */}
-
+        {donationOpen && (
+          <div className="modal-pop-up">
+            <div className="modal-pop-up-close" onClick={() => setDonationOpen(false)}>
+              <img src={'/cross.svg'} />
+            </div>
+            <div className="modal-pop-up-title">
+              {"Ajuda'ns a aturar les obres!"}
+            </div>
+            <div className="modal-pop-up-button" onClick={() => window.open('https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W8N7F6P4LKQ2W&source=url')}>
+              {'Donar'}
+            </div>
+          </div>
+        )}
       </div>
       {/* <footer>
         Contacta con nosotros
@@ -815,6 +828,58 @@ export default function Home() {
           z-index: -1;
           animation: title-movement 2s infinite;
           animation-timing-function: ease-in-out;
+        }
+
+        .modal-pop-up {
+          z-index: 999;
+          border-radius: 8px;
+          padding: 26px;
+          position: fixed;
+          bottom: 24px;
+          right: 24px;
+          width: 300px;
+          height: 150px;
+          background: rgba(255,255,255,0.8);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
+        .modal-pop-up-close img{
+          width: 16px;
+          height: 16px;
+        }
+
+        .modal-pop-up-close {
+          cursor: pointer;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
+
+        .modal-pop-up-title {
+          margin-top: 12px;
+          color: #63B995;
+          font-family: 'Belta';
+          font-size: 28px;
+          margin-bottom: 8px;
+          text-align: center;
+        }
+
+        .modal-pop-up-button {
+          cursor: pointer;
+          width: 100%;
+          color: white;
+          background: #63B995;
+          padding: 6px;
+          text-align: center;
+          border-radius: 4px;
+        }
+
+        @media (max-width: 764px) {
+          .modal-pop-up {
+            width: 90%;
+          }
         }
 
         @media (max-width: 600px) {
