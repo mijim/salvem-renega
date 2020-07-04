@@ -99,9 +99,21 @@ export default function Manifest() {
           <a target='_blank' href={'https://prodesert.org/'}> {'Asociación Ecologista Pro Desert​'} </a>
           <p>Nuevas adhesiones:</p>
           <a target='_blank' href={'https://www.intersindical.org/'}> {'Intersindical Valenciana​'} </a>
+          <a target='_blank' href={'https://www.facebook.com/Xarxa-dAgroecol%C3%B2gia-de-Castell%C3%B3-XAC-117076068318097/'}> {'Xarxa d´Agroecologia de Castelló (XAC)'} </a>
+          <a target='_blank' href={'https://www.facebook.com/casalpopularonda/'}> {'Casal Popular d´Onda​'} </a>
           <a target='_blank' href={'https://fridaysforfuturecastello.wordpress.com/vinaros/'}> {'Fridays for Future - Joventut pel Clima Vinaròs'} </a>
+          <a target='_blank' href={'http://www.mascotasenadopcion.es/'}> {'Mascotes en Adopció Castelló'} </a>
+          <a target='_blank' href={''}> {'Asociación para la defensa de la Naturaleza de Sierra de Gata Vettonia​'} </a>
+          <a target='_blank' href={''}> {'Maleïdes. Col•lectiu feminista de VIla-real'} </a>
           <a target='_blank' href={'https://www.endavant.org/'}> {'Endavant (OSAN)​'} </a>
-          <p> Número de adhesiones físicas individuales: 83</p>
+          <a target='_blank' href={''}> {'Punt Roig'} </a>
+          <a target='_blank' href={''}> {'UGT-PV Comarques del Nord'} </a>
+          <a target='_blank' href={'http://www.periferies.org/'}> {'Perifèries del Món'} </a>
+          <a target='_blank' href={'https://www.pv.ccoo.es/Comarques_del_Nord'}> {'CCOO PV Comarques del Nord​'} </a>
+          <a target='_blank' href={'https://comunitatujixplaneta.uji.es/'}> {'Comunitat UJIxPlaneta'} </a>
+          <a target='_blank' href={'http://www.carrasca-ecologistesenaccio.org/'}> {'Colla Ecologista La Carrasca - Ecologistes en Acció'} </a>
+          <a target='_blank' href={'http://www.serra-espada.org/'}> {'SASE (Societat d´Amics de la Serra Espadà)'} </a>
+          <p> Número de adhesiones físicas individuales: 85</p>
         </div>
 
       </div>
