@@ -32,7 +32,7 @@ const photosArray = [
 export default function Home() {
   const [language, setLanguage] = useState('es');
   const [showDownArrow, setShowDownArrow] = useState(true);
-  const [donationOpen, setDonationOpen] = useState(true);
+  const [donationOpen, setDonationOpen] = useState(false);
   const { t } = useTranslation();
 
   useEffect(() => {
