@@ -32,7 +32,7 @@ const photosArray = [
 export default function Home() {
   const [language, setLanguage] = useState('es');
   const [showDownArrow, setShowDownArrow] = useState(true);
-  const [donationOpen, setDonationOpen] = useState(false);
+  const [donationOpen, setDonationOpen] = useState(true);
   const { t } = useTranslation();
 
   useEffect(() => {
@@ -229,7 +229,7 @@ export default function Home() {
             <div className="modal-pop-up-title">
               {"Ajuda'ns a aturar les obres!"}
             </div>
-            <div className="modal-pop-up-button" onClick={() => window.open('https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W8N7F6P4LKQ2W&source=url')}>
+            <div className="modal-pop-up-button" onClick={() => window.open('https://paypal.me/pools/c/8rqM9duxy6')}>
               {'Donar'}
             </div>
           </div>
