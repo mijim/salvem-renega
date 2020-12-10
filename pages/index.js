@@ -135,7 +135,7 @@ export default function Home() {
           </div>
 
         </main>
-        <Parallax y={[-10, 24]}  >
+        <Parallax y={[-60, 24]}  >
           <div className="background-image">
             <img src='/background-image.svg' />
           </div>
@@ -596,7 +596,7 @@ export default function Home() {
 
         .sign-button {
           margin-top: 12px;
-          font-size: 24px;
+          font-size: 18px;
           cursor: pointer;
           color: #63B995;
           background: white;
@@ -604,6 +604,7 @@ export default function Home() {
           padding: 10px;
           padding-left: 15px;
           padding-right: 15px;
+          z-index: 9;
           transition: box-shadow .3s ease-in-out;
         }
 
@@ -840,6 +841,7 @@ export default function Home() {
           width: 300px;
           height: 150px;
           background: rgba(255,255,255,0.8);
+          backdrop-filter: blur(16px);
           display: flex;
           flex-direction: column;
           justify-content: space-between;
