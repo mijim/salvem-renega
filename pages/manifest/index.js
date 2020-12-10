@@ -97,7 +97,6 @@ export default function Manifest() {
           <a target='_blank' href={'https://www.ecologistasenaccion.org/federaciones/pais-valencia/castello/la-vall-duixo/'}> {'L’ARQUET-Ecologistes en Acció de la Vall d’Uixó'} </a>
           <a target='_blank' href={'https://www.gecen.net'}> {'GECEN-Grup d’Estudis i Conservació dels Espais Naturals'} </a>
           <a target='_blank' href={'https://prodesert.org/'}> {'Asociación Ecologista Pro Desert​'} </a>
-          <p>Nuevas adhesiones:</p>
           <a target='_blank' href={'https://www.intersindical.org/'}> {'Intersindical Valenciana​'} </a>
           <a target='_blank' href={'https://www.facebook.com/Xarxa-dAgroecol%C3%B2gia-de-Castell%C3%B3-XAC-117076068318097/'}> {'Xarxa d´Agroecologia de Castelló (XAC)'} </a>
           <a target='_blank' href={'https://www.facebook.com/casalpopularonda/'}> {'Casal Popular d´Onda​'} </a>
@@ -113,7 +112,22 @@ export default function Manifest() {
           <a target='_blank' href={'https://comunitatujixplaneta.uji.es/'}> {'Comunitat UJIxPlaneta'} </a>
           <a target='_blank' href={'http://www.carrasca-ecologistesenaccio.org/'}> {'Colla Ecologista La Carrasca - Ecologistes en Acció'} </a>
           <a target='_blank' href={'http://www.serra-espada.org/'}> {'SASE (Societat d´Amics de la Serra Espadà)'} </a>
-          <p> Número de adhesiones físicas individuales: 85</p>
+          <p>Nuevas adhesiones:</p>
+          <a target='_blank' href={'https://sites.google.com/site/castelloenbici/'}> {'Castelló en Bici'} </a>
+          <a target='_blank' href={'https://twitter.com/adp_asoc'}> {'Associació Amics de Palanques'} </a>
+          <a target='_blank' href={'https://www.facebook.com/cuidembeni/'}> {'Cuidem Benimaclet'} </a>
+          <a target='_blank' href={'http://www.facebook.com/cgtkastello'}> {'CGT Castelló'} </a>
+          <a target='_blank' href={'https://www.lamaranya.org'}> {'Centre de Cultura i Joventut La Maranya'} </a>
+          <a target='_blank' href={'https://www.sepc.cat/'}> {`Sindicat d'Estudiants dels Països Catalans UJI`} </a>
+          <a target='_blank' href={'https://www.sepc.cat/'}> {`Sindicat d'Estudiants dels Països Catalans`} </a>
+          <a target='_blank' href={'https://www.facebook.com/muixerangadelaplana/'}> {'Muixeranga de la Plana'} </a>
+          <a target='_blank' href={'http://www.eupv.org/'}> {'Esquerra Unida del País Valencià'} </a>
+          <a target='_blank' href={'https://twitter.com/Decidim_CN'}> {'Decidim-País Valencià'} </a>
+          <a target='_blank' href={'https://www.facebook.com/DefensaPaisajePedralba/'}> {'En Defensa del Paisaje de Pedralba'} </a>
+          <a target='_blank' href={'http://www.ecobetera.es/'}> {'Ecobétera'} </a>
+          <a target='_blank' href={'https://www.facebook.com/asoc.SURC/'}> {'Associació Cultural SURC'} </a>
+
+          <p> Número de adhesiones físicas individuales: 103</p>
         </div>
 
       </div>
@@ -449,6 +463,7 @@ export default function Manifest() {
           .manifest-paragraf {
               margin-bottom: 24px;
               text-align: justify;
+              line-height: 26px;
             }
 
           .news-container {
@@ -611,6 +626,10 @@ export default function Manifest() {
   
           .selected {
             color: rgba(255,255,255, 1);
+          }
+          p {
+            color: rgba(255,255,255, 1);
+            font-size: 18px;
           }
         `}</style>
       <style jsx global>{`
