@@ -647,13 +647,13 @@ export default function Home() {
           cursor: pointer;
           min-width: 40px;
           height: 40px;
-          color: rgba(255,255,255, 0.4);
+          color: rgba(255,255,255, 0.9);
           display: flex;
           justify-content: center;
           align-items: center;
           font-size: 12px;
           line-height: 18px;
-          border: 1px solid rgba(255,255,255, 0.2);
+          border: 1px solid rgba(255,255,255, 0.9);
           border-radius: 4px;
           padding: 10px;
           margin-left: 8px;

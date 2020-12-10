@@ -97,6 +97,7 @@ export default function Manifest() {
           <a target='_blank' href={'https://www.ecologistasenaccion.org/federaciones/pais-valencia/castello/la-vall-duixo/'}> {'L’ARQUET-Ecologistes en Acció de la Vall d’Uixó'} </a>
           <a target='_blank' href={'https://www.gecen.net'}> {'GECEN-Grup d’Estudis i Conservació dels Espais Naturals'} </a>
           <a target='_blank' href={'https://prodesert.org/'}> {'Asociación Ecologista Pro Desert​'} </a>
+          <p>Nuevas adhesiones:</p>
           <a target='_blank' href={'https://www.intersindical.org/'}> {'Intersindical Valenciana​'} </a>
           <a target='_blank' href={'https://www.facebook.com/Xarxa-dAgroecol%C3%B2gia-de-Castell%C3%B3-XAC-117076068318097/'}> {'Xarxa d´Agroecologia de Castelló (XAC)'} </a>
           <a target='_blank' href={'https://www.facebook.com/casalpopularonda/'}> {'Casal Popular d´Onda​'} </a>
@@ -112,7 +113,6 @@ export default function Manifest() {
           <a target='_blank' href={'https://comunitatujixplaneta.uji.es/'}> {'Comunitat UJIxPlaneta'} </a>
           <a target='_blank' href={'http://www.carrasca-ecologistesenaccio.org/'}> {'Colla Ecologista La Carrasca - Ecologistes en Acció'} </a>
           <a target='_blank' href={'http://www.serra-espada.org/'}> {'SASE (Societat d´Amics de la Serra Espadà)'} </a>
-          <p>Nuevas adhesiones:</p>
           <a target='_blank' href={'https://sites.google.com/site/castelloenbici/'}> {'Castelló en Bici'} </a>
           <a target='_blank' href={'https://twitter.com/adp_asoc'}> {'Associació Amics de Palanques'} </a>
           <a target='_blank' href={'https://www.facebook.com/cuidembeni/'}> {'Cuidem Benimaclet'} </a>
