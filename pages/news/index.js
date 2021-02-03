@@ -88,8 +88,7 @@ const urlNews = [
       "Polèmica per l’inici de les obres d’un centre interpretatiu prop de la Renegada, a Orpesa",
     link:
       "https://www.lavanguardia.com/vida/20200514/481144776760/compromis-exige-transparencia-absoluta-a-oropesa-sobre-el-centro-marino.html",
-    image:
-      "https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.elperiodicomediterraneo.com%2Fnoticias%2Ftemadia%2Fcastellon-alega-plan-costa-frenar-desarrollo-urbanistico_1042389.html&psig=AOvVaw3sGnabxb-FHnWk_UFgarBP&ust=1590574962972000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOidodin0ekCFQAAAAAdAAAAABAD",
+    image: "",
     description:
       'Compromís exige "transparencia absoluta" al Ayuntamiento de Orpesa sobre el proyecto del entorno de la Renegà que prevé la construcción del Centro de Interpretación del Mediterráneo (CIMED)',
     source: "La Vanguardia",
