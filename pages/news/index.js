@@ -11,6 +11,16 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 const urlNews = [
   {
     title:
+      "'Salvem La Renegà' emprén noves protestes en defensa del territori i exigeix la seua protecció",
+    link:
+      "https://castellonplaza.com/SalvemLaRenegemprnnovesprotestesendefensadelterritoriiexigeixlaseuaprotecci",
+    image:
+      "https://castellonplaza.com/public/Image/2021/2/WhatsAppImage2021-02-26at12.38.034_NoticiaAmpliada.jpg",
+    description: `CASTELLÓ. Al crit de "la Renegà no es toca" o "més protecció, menys excavació" i amb el soroll de les casserolades de fons, la plataforma Salvem la Renegà ha emprés noves protestes per la represa de les obres en la zona de Torre Bellver i s'ha reunit aquest divendres enfront de les dependències de Medi Ambient de la Diputació de Castelló. I és que el grup ecologista no cessa en la seua lluita per protegir el paratge de la Renegà, pròxim a la Via Verda que uneix Orpesa i Benicàssim, i que és considerat Lloc d'Importància Comunitària (LIC).`,
+    source: "Castellón Plaza",
+  },
+  {
+    title:
       "Salvem la Renegà' denuncia que Costa Bellver sigue deteriorando la zona LIC con la complicidad de las instituciones",
     link:
       "https://castellon.elperiodicodeaqui.com/epda-noticias/-salvem-la-reneg-denuncia-que-costa-bellver-sigue-deteriorando-la-zona-lic-con-la-complicidad-de-las-instituciones/237857",
@@ -19,6 +29,235 @@ const urlNews = [
     description:
       'El movimiento acusa a Costa Bellver de ser "una empresa que se mueve por la búsqueda del beneficio económico" y piden a las instituciones que actúen ya',
     source: "Castellón, El periodico de aquí",
+  },
+  {
+    title: "Incendio en la Renegà",
+    link:
+      "https://castellondiario.com/un-fuego-quema-60-metros-cuadrados-de-matorral-y-arboles-en-la-renega/amp/?__twitter_impression=true",
+    image:
+      "https://castellondiario.com/wp-content/uploads/2021/01/Incendio-la-Reneg%C3%A0.jpg",
+    source: "Castellón Diario",
+    description:
+      "Un fuego quema 60 metros cuadrados de matorral y árboles en la Renegà",
+  },
+  {
+    title:
+      "Plataformas ecologistas reclaman en Castellón más concienciación social",
+    link:
+      "https://castellonplaza.com/plataformas-ecologistas-reclaman-en-castello-mas-concienciacion-social-hacia-el-medio-ambiente",
+    image:
+      "https://castellonplaza.com/public/Image/2020/11/97FDA95C-7B2A-417A-9E16-D19CB8DCD2B9_forCrop.jpg",
+    source: "Castellón Plaza",
+    description:
+      "CASTELLÓ. Representantes de los colectivos Salvem la Renegà, Iai@flautas, La Cosa Nostra, Castelló en Bici, CGT, Castelló LGTBI, Intersindical, Plataforma Frenem la Contaminació, AAVV Vecinos Playa Almassora, CCOO País Valencià, Comunitat UJIxPlaneta, Xarxa Agroecològica Castelló y Plataforma per un Nou Model Energètic se han manifestado este martes junto al Auditori y Palau de Congressos de Castelló para reivindicar una mayor protección medioambiental por parte de las grandes compañías, coincidiendo con la celebración del II Ecoforum.",
+  },
+  {
+    title:
+      "La Plataforma Salvem la Renegà expone su lucha junto a otros colectivos en defensa del territorio",
+    link:
+      "https://castellonplaza.com/LaPlataformaSalvemlaRenegexponesuluchajuntoaotroscolectivosendefensadelterritorio",
+    image:
+      "https://castellonplaza.com/public/Image/2020/7/WhatsAppImage2020-07-04at15.37.19_NoticiaAmpliada.jpg",
+    source: "Castellón Plaza",
+    description: `
+    CASTELLÓ. La Plataforma Salvem la Renegà participó el pasado viernes en una mesa redonda, junto a diferentes asociaciones en defensa del territorio, para compartir las distintas experiencias de cada organización en la lucha por la defensa de la tierra. Plataformas como No a la MAT,Petroli no, Columbretes Netes, Plataforma Antifracking o Frenem la Contaminació participaron en la charla celebrada en la Plaza de L'Ereta de Castelló.`,
+  },
+  {
+    title:
+      "El grupo Calabuig continúa con su operación de greenwashing para poder construir en la zona de la Colomera",
+    link:
+      "http://el7set.es/art/36065/el-grupo-calabuig-continua-con-su-operacion-de-greenwashing-para-poder-construir-en-la-zona-de-la-colomera",
+    image:
+      "http://el7set.es/upload/images/06_2020/7357_whatsapp-image-2020-06-29-at-114715.jpg",
+    source: "El7set",
+    description:
+      "Esta vez utilizando una tortuga y la limpieza de la playa nudista como reclamo",
+  },
+  {
+    title:
+      "Exitosa concentración en las calles de Benicàssim organizada por la plataforma Salvem la Renegà",
+    link:
+      "https://www.elperiodicodeaqui.com/epda-noticias/exitosa-concentraci-n-en-las-calles-de-benic-ssim-organizada-por-la-plataforma-salvem-la-reneg-/217244",
+    description:
+      "Salvem la Renegà canaliza la demanda social que exige la protección del patrimonio natural, paisajístico e histórico que alberga el litoral de Oropesa y pide su declaración como espacio natural protegido",
+    image:
+      "https://www.elperiodicodeaqui.com/netpublisher/minfo/imagenes/8432_IMG_7508.jpg",
+    source: "El periodico de aquí",
+  },
+  {
+    title:
+      "Esquerra Unida se suma a la movilización contra el proyecto urbanístico de la Renegà",
+    link:
+      "https://www.elperiodicodeaqui.com/epda-noticias/esquerra-unida-se-suma-a-la-movilizaci-n-contra-el-proyecto-urban-stico-de-la-reneg-/216956",
+    description:
+      'Silvia Peris: "Si la empresa está actuando en los terrenos sin licencia, la Generalitat debe actuar ya para detener las obras"',
+    source: "El periodico de aquí",
+  },
+  {
+    title:
+      "Las protestas por el proyecto urbanístico de Costa Bellver se trasladan a Benicàsssim",
+    description:
+      "ASTELLÓ. La llamada a la movilización por parte de la plataforma ciudadana Salvem la Renegà, contraria al proyecto urbanístico en el plan parcial de Torre Bellver, que promueven la empresa Costa Bellver y la Fundación Azul Marino en el término municipal de Oropesa del Mar, contó este viernes con amplio eco social y una masiva asistencia de personas en una manifestación que tuvo un largo recorrido por las calles de Benicàssim.",
+    source: "Castellón Plaza",
+    link:
+      "https://castellonplaza.com/las-protestas-por-el-proyecto-urbanistico-de-costa-bellver-se-trasladan-a-benicasssim",
+    image:
+      "https://castellonplaza.com/public/Image/2020/6/SalvemlaReneg%C3%A1CarlosPascual27_Multimedia-ampliada.jpg",
+  },
+  {
+    title:
+      "L'empresa Costa Bellver SA perfora la serra de la Renegà sense llicència d'obra major per construir un macroprojecte turístic",
+    description:
+      "La societat de l’empresari Eugenio Calabuig Gimeno va començar les obres amb maquinària pesant sense disposar de les llicències corresponents, segons ha pogut comprovar la 'Directa'. Calabuig es troba a l’espera de conèixer la data de judici oral per un delicte d’estafa, apropiació indeguda i administració deslleial per la compravenda dels terrenys ubicats a la zona sud de la serra de la Renegà, on pretén construir un centre d’interpretació del Mediterrani, 56 apartaments de luxe i un hotel de tres plantes amb 77 habitacions",
+    source: "Directa",
+    link:
+      "https://directa.cat/lempresa-costa-bellver-sa-perfora-la-serra-de-la-renega-sense-llicencia-dobra-major-per-construir-un-macroprojecte-turistic/",
+    image: "https://directa.cat/app/uploads/2020/06/web_DSCF3051.jpg",
+  },
+  {
+    title:
+      "La población reacciona ante las controvertidas obras en la costa de Oropesa con foto-denuncias y vídeo-denuncias",
+    description:
+      "Durante el confinamiento empezaron unas obras que la constructora Costa Bellver sabía que iban a despertar el rechazo entre la ciudadanía. Desde la plataforma Salvem la Renegà manifiestan que ese es el motivo por el cual han puesto en marcha esta gran campaña de marketing que es el centro de interpretación. Una manera de dar aspecto verde a un proyecto que en definitiva no supondrá más que cubrir de hormigón nuestro litoral.",
+    source: "El7set",
+    link:
+      "http://el7set.es/art/35983/la-poblacion-reacciona-ante-las-controvertidas-obras-en-la-costa-de-oropesa-con-foto-denuncias-y-video-denuncias",
+    image: "http://el7set.es/upload/images/06_2020/2617_20200524_111957.jpg",
+  },
+  {
+    title:
+      "Arrecian las protestas ciudadanas contra el proyecto de Costa Bellver en Oropesa del Mar",
+    description:
+      "Con el final del estado de alarma, las movilizaciones ciudadanas contra las obras para crear un centro de interpretación y el desarrollo urbanístico a cargo de la promotora Costa Bellver en Oropesa del Mar arreciarán, tal como anuncia este viernes la plataforma Salvem la Renegà, que volverá a promover una nueva marcha prevista para el próximo 26 de junio que, desde Benicàssim, transcurrirá por la Vía Verde, itinerario que une las dos localidades vecinas y que está colindante a las obras iniciadas durante el pasado confinamiento general de la población.",
+    source: "Castellón Plaza",
+    link:
+      "https://castellonplaza.com/arrecian-las-protestas-ciudadanas-contra-el-proyecto-de-costa-bellver-en-oropesa-del-mar",
+    image:
+      "https://castellonplaza.com/public/Image/2020/6/IMG-20200525-WA0015_forCrop.jpg",
+  },
+  {
+    title:
+      "Miembros de la plataforma Salvem la Renegà se reúnen con la constructora Costa Bellver",
+    description:
+      "El pasado martes 9 de junio integrantes de la plataforma Salvem la Renegà se reunieron con la constructora Costa Bellver. En esta reunión la constructora les explicó en qué consistían sus proyectos y en qué punto estaban. Concretamente, les explicaron los proyectos del centro de interpretación y el hotel, así como lo que querían hacer en la zona LIC. Por lo que explicaron, el proyecto de la empresa para este Lugar de Importancia Comunitaria de la Red Natura 2000 incluiría, en el caso de que se les permitiera, una zona de restauración.",
+    source: "El7set",
+    link:
+      "http://el7set.es/art/35955/miembros-de-la-plataforma-salvem-la-renega-se-reunen-con-la-constructora-costa-bellver",
+    image:
+      "http://el7set.es/upload/images/06_2020/8520_whatsapp-image-2020-06-03-at-184640.jpg",
+  },
+  {
+    title:
+      "Salvem la Renegà duda de la legalidad del proyecto de Costa Bellver tras reunirse con la constructora",
+    description: `La Plataforma Salvem la Renegà ha asegurado que la constructora Costa Bellver, responsable de la ejecución del Centro de Interpretación Marino del Mediterráneo (Cimed) en Oropesa del Mar, "no cuenta con licencia de obras" sino con una "declaración responsable" y han puesto en duda que ésta sirva para los trabajos que se están realizando.`,
+    source: "Castellón Plaza",
+    link:
+      "https://castellonplaza.com/SalvemlaRenegdudadelalegalidaddelproyectodeCostaBellvertrasreunirseconlaconstructora",
+    image:
+      "https://castellonplaza.com/public/Image/2020/6/IMG_5416a_forCrop.jpg",
+  },
+  {
+    title:
+      "Salvem la Renegà dice que las obras del centro marino no tienen licencia",
+    description: `La Plataforma Salvem la Renegà ha asegurado que la constructora Costa Bellver, responsable de la ejecución del Centro de Interpretación Marino del Mediterráneo (CIMED) en Oropesa del Mar,"no cuenta con licencia de obras" sino con una "declaración responsable" y han puesto en duda que ésta sirva para los trabajos que se están realizando.`,
+    source: "La Vanguardia",
+    link:
+      "https://www.lavanguardia.com/vida/20200616/481814478128/salvem-la-renega-dice-que-las-obras-del-centro-marino-no-tienen-licencia.html",
+  },
+  {
+    title:
+      "Salvem la Renegà es manifesta per a impedir l'especulació urbanística al litoral d’Orpesa",
+    description: `Membres de la Plataforma Salvem la Renegà s’han manifestat aquest divendres al paratge litoral de la Torre de Bellver, on han començat les obres del futur Centre d'Interpretació Marí del Mediterrani (Cimed) a Orpesa, amb la intenció d'impedir "l'especulació urbanística" i de promoure el respecte pel "paisatge litoral".`,
+    link:
+      "https://apuntmedia.es/va/noticies/societat/salvem-la-renega-es-manifesta-per-a-impedir-l-especulacio-urbanistica-al-litoral-d-orpesa",
+    source: "À punt",
+    image: "https://statics.apuntmedia.es/news/IMG0000078210_1591979186.jpeg",
+  },
+  {
+    title: `'Salvem la Renegà' condena los insultos aparecidos contra los promotores del proyecto Costa Bellver`,
+    description:
+      "La Plataforma Salvem La Renegà ha mostrado este viernes, a través de un comunicado dirigido a los medios, su rechazo frontal y condena por los insultos ocasionados por personas ajenas a la misma y que no representan a este colectivo ciudadano.",
+    link:
+      "https://castellonplaza.com/salvem-la-renega-condena-los-insultos-aparecidos-contra-los-promotores-del-proyecto-costa-bellver",
+    source: "Castellón Plaza",
+    image:
+      "https://castellonplaza.com/public/Image/2020/6/WhatsAppImage2020-06-12at12.28.25_NoticiaAmpliada.jpg",
+  },
+  {
+    title: `Salvem la Renegà despliega pancartas para impedir la especulación urbanística`,
+    description: `Miembros de la Plataforma Salvem la Renegà han desplegado hoy pancartas en el paraje litoral Torre-Bellver, donde han comenzado las obras del futuro Centro de Interpretación Marino del Mediterráneo (CIMED) en Oropesa del Mar, con la intención de impedir "la especulación urbanística" y de promover el respeto por el "paisaje litoral".`,
+    link:
+      "https://www.lavanguardia.com/vida/20200612/481723381009/salvem-la-renega-despliega-pancartas-para-impedir-la-especulacion-urbanistica.html",
+    source: "La Vanguardia",
+  },
+  {
+    title:
+      "Oropesa pide a Medio Ambiente un informe sobre las podas en zona LIC",
+    description:
+      "El Ayuntamiento de Oropesa del Mar ha remitido un nuevo escrito a la Conselleria de Medio Ambiente para que informe sobre las obras de poda que se han llevado a cabo en el Lugar de Interés Comunitario (LIC) ubicado en el sector sur de Torre Bellver, con el fin de garantizar que se han realizado adecuadamente.",
+    link:
+      "https://www.lavanguardia.com/vida/20200611/481715164983/oropesa-pide-a-medio-ambiente-un-informe-sobre-las-podas-en-zona-lic.html",
+    source: "La Vanguardia",
+  },
+  {
+    title: "Crece la oposición al centro marino en el litoral de Orpesa",
+    description:
+      "Orpesa acogerá este fin de semana varias acciones reivindicativas contra las obras que se llevan a cabo en el entorno de la Renegà. El movimiento ecologista denuncia a los promotores ante el Seprona por presuntos delitos contra el medio ambiente.",
+    link:
+      "https://www.publico.es/ciencias/renega-crece-oposicion-centro-marino-litoral-orpesa.html",
+    source: "Público",
+    image:
+      "https://www.publico.es/files/article_main//files/crop/uploads/2020/06/10/5ee1285d21c34.r_1591853118052.0-493-1200-1293.jpeg",
+  },
+  {
+    title:
+      "Salvem La Renegà convoca tres acciones reivindicativas contra el centro marino",
+    description: `La Plataforma Salvem La Renegà ha convocado tres acciones reivindicativas para "conseguir detener la explotación urbanística" que supondrá, según la organización, el futuro Centro de Interpretación Marino del Mediterráneo (CIMED), cuyas obras ya han comenzado en la localidad de Oropesa del Mar. Desde la plataforma han convocado tres jornadas reivindicativas, el viernes 12 de junio, el domingo 14 y el lunes 15 junto a las obras en la urbanización Torre Bellver de Oropesa para que se acuda con pancartas, en actitud "pacífica y sin insultos" y para informar "a los que quieran saber qué pasa" con el futuro centro de interpretación marino y sus consecuencias para el Medio Ambiente.`,
+    link:
+      "https://castellonplaza.com/salvem-la-renega-convoca-tres-acciones-reivindicativas-contra-el-centro-marino",
+    source: "Castellón Plaza",
+    image:
+      "https://castellonplaza.com/public/Image/2020/6/1589993335foto1_NoticiaAmpliada_NoticiaAmpliada.jpg",
+  },
+  {
+    title:
+      "'Salvem la Renegà' y el Gecen denuncian ante el Seprona las obras del proyecto Costa Bellver",
+    description:
+      "La plataforma ciudadana Salvem la Renegà y el grupo ecologista Gecen han presentado formalmente denuncia ante el Seprona contra el proyecto Costa Bellver, que se viene construyendo junto al entorno de la Renegà, en el término municipal de Oropesa del Mar, según han informado  fuentes de estos colectivos a través de un comunicado.",
+    link:
+      "https://castellonplaza.com/salvem-la-renega-y-el-gecen-denuncian-ante-el-seprona-las-obras-del-proyectocosta-bellver",
+    image:
+      "https://castellonplaza.com/public/Image/2020/6/IMG_3218_NoticiaAmpliada.jpg",
+    source: "Castellón Plaza",
+  },
+  {
+    title: `Saavedra (Podemos) insta a parar las obras junto a la Renegà antes de lamentar "hechos consumados"`,
+    description:
+      "Marisa Saavedra, diputada de Unidas Podemos en el Congreso por Castellón, ha visitado este sábado La Renegá, donde se ha reunido con colectivos vecinales y de protección de la naturaleza que están movilizándose para salvaguardar este espacio de los proyectos de urbanización que, tal como denuncian, amenazan con la destrucción de un entorno de gran valor medioambiental.",
+    link:
+      "https://castellonplaza.com/saavedra-podemos-insta-a-parar-las-obras-junto-a-la-renega-antes-de-lamentar-hechos-consumados?fbclid=IwAR24rV8Gs7EeqXX9vaHXFztn6rklUytJPZancoJAXqptPfPNls2d1TzbWhk",
+    image:
+      "https://castellonplaza.com/public/Image/2020/6/WhatsAppImage2020-06-06at21.01.22_NoticiaAmpliada.jpg",
+    source: "Castellón Plaza",
+  },
+  {
+    title: `El paraigua legislatiu que dóna aixopluc a la destrossa del litoral verge a la via verda de Benicàssim-Orpesa és el PGOU de 1982`,
+    description:
+      "Recentment han començat les obres per a la construcció d’un Centre d’Interpretació Mari, un aquari, nucli zoològic, en zona annexa a la via verda de Benicàssim-Orpesa. Es tracta d’una zona litoral no urbanitzada. Aquest Centre forma part d’una actuació urbanística, Costa Bellver, que comptarà amb un hotel i centenars de segons habitatges destruint una zona litoral de gran valor paisatgístic, mediambiental i cultural.",
+    link:
+      "https://paisdelmar.com/el-paraigua-legislatiu-que-dona-aixopluc-a-la-destrossa-del-litoral-verge-a-la-via-verda-de-benicassim-orpesa-es-el-pgou-de-1982-2/",
+    image: "https://paisdelmar.com/wp-content/uploads/2020/06/via-verda.jpeg",
+    source: "País del mar",
+  },
+  {
+    title: "Aguas revueltas en la playa de la Renegà",
+    description: `La constructora Costa Bellver, de la familia Calabuig, prepara la obra de un Centro de Interpretación Marina en la Costa de Oropesa bajo la lupa de ecologistas y vecinos
+    Esta zona costera es un Lugar de Interés Comunitario (LIC) y, por tanto, protegido por su valor medioambiental`,
+    image:
+      "https://www.cuartopoder.es/wp-content/uploads/2020/06/1_Ma0N-mWrxExeamr97ag87Q-750x430.jpeg",
+    source: "CuartoPoder",
+    link:
+      "https://www.cuartopoder.es/sociedad/medio-ambiente/2020/06/17/aguas-revueltas-en-la-playa-de-la-renega/",
   },
   {
     title:

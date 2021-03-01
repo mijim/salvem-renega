@@ -146,7 +146,7 @@ export default function Home() {
             {"Adhesió al MANIFEST"}
           </div>
         </main>
-        <Parallax y={[-60, 24]}>
+        <Parallax y={[-90, 24]}>
           <div className="background-image">
             <img src="/background-image.svg" />
           </div>
@@ -155,10 +155,21 @@ export default function Home() {
       <div className="body-container">
         <div className="background-gradient-1"></div>
         <div className="background-gradient-2"></div>
-
         <div className={`arrow-down ${showDownArrow ? "" : "hide"}`}>
           <img src="/arrow-down.svg" />
         </div>
+        <iframe
+          style={{
+            width: "100vw",
+            height: "100vh",
+            zIndex: 5,
+            marginBottom: 100,
+            marginTop: 100,
+          }}
+          allowFullScreen
+          frameborder="0"
+          src="https://www.youtube.com/embed/c2qEEYYMx1M"
+        ></iframe>
         <Fade right>
           <div className="manifest-section">
             <div className="manifest-section-title">{t("m-title-1")}</div>
@@ -230,7 +241,6 @@ export default function Home() {
             </video>
           </Fade> */}
         </Fade>
-
         {/* <div className="images-container">
           <img src="/arbol.svg" />
           <img src="/excavadora.svg" />
@@ -527,6 +537,12 @@ export default function Home() {
           flex-direction: column;
           padding: 0 10%;
           width: 100vw;
+          background: linear-gradient(
+            180deg,
+            rgba(195, 221, 223, 1) 0%,
+            rgba(255, 226, 192, 1) 47%,
+            rgba(227, 244, 206, 1) 100%
+          );
         }
 
         .manifest-section img {
@@ -602,6 +618,7 @@ export default function Home() {
           z-index: 0;
           max-width: 2800px;
           margin-left: -200px;
+          opacity: 0.5;
         }
 
         .background-image img {
@@ -629,6 +646,7 @@ export default function Home() {
         }
 
         .sign-button {
+          text-transform: uppercase;
           margin-top: 12px;
           font-size: 18px;
           cursor: pointer;
@@ -707,11 +725,12 @@ export default function Home() {
         }
 
         .subtitle {
+          margin: 0;
           z-index: 30;
           color: #fffffc;
           opacity: 0.8;
           font-weight: 200;
-          font-size: 16px;
+          font-size: 22px;
           line-height: 28px;
           text-align: center;
           margin-bottom: 20px;
@@ -791,7 +810,7 @@ export default function Home() {
           color: white;
           animation: title-movement 2s infinite;
           animation-timing-function: ease-in-out;
-          margin-bottom: 20px;
+          margin-bottom: 12px;
           width: fit-content;
           text-align: center;
         }
