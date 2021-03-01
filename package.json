@@ -17,6 +17,7 @@
     "react-image-carousel": "^2.0.18",
     "react-pdf": "^4.1.0",
     "react-responsive-carousel": "^3.2.7",
+    "react-responsive-masonry": "^2.1.1",
     "react-reveal": "^1.2.2",
     "react-scroll-parallax": "^2.3.2",
     "react-transition-group": "^4.4.1",

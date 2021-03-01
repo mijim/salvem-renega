@@ -1,47 +1,45 @@
-import Head from 'next/head'
-import Link from 'next/link'
+import Head from "next/head";
+import Link from "next/link";
 
-import { useEffect, useState } from 'react'
-import { translateEs } from '../translations/es';
-import { translateCat } from '../translations/cat';
-import Fade from 'react-reveal/Fade';
-import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
+import { useEffect, useState } from "react";
+import { translateEs } from "../translations/es";
+import { translateCat } from "../translations/cat";
+import Fade from "react-reveal/Fade";
+import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
-import Carousel from 'react-image-carousel';
+import Carousel from "react-image-carousel";
 const photosArray = [
-  'DSC_0016.jpg',
-  'DSC_0017.jpg',
-  'DSC_0018.jpg',
-  'DSC_0019.jpg',
-  'DSC_0020.jpg',
-  'DSC_0023.jpg',
-  'DSC_0031.jpg',
-  'DSC_0033.jpg',
-  'DSC_0034.jpg',
-  'DSC_0038.jpg',
-  'DSC_0039.jpg',
-  'DSC_0040.jpg',
-  'DSC_0041.jpg',
-  'DSC_0043.jpg',
-  'DSC_0045.jpg',
-  'DSC_0049.jpg',
-
-]
+  "DSC_0016.jpg",
+  "DSC_0017.jpg",
+  "DSC_0018.jpg",
+  "DSC_0019.jpg",
+  "DSC_0020.jpg",
+  "DSC_0023.jpg",
+  "DSC_0031.jpg",
+  "DSC_0033.jpg",
+  "DSC_0034.jpg",
+  "DSC_0038.jpg",
+  "DSC_0039.jpg",
+  "DSC_0040.jpg",
+  "DSC_0041.jpg",
+  "DSC_0043.jpg",
+  "DSC_0045.jpg",
+  "DSC_0049.jpg",
+];
 
 export default function Home() {
-  const [language, setLanguage] = useState('es');
+  const [language, setLanguage] = useState("es");
   const [showDownArrow, setShowDownArrow] = useState(true);
   const [donationOpen, setDonationOpen] = useState(true);
   const { t } = useTranslation();
 
   useEffect(() => {
-    setLanguage(navigator.language.indexOf('es') > -1 ? 'es' : 'cat');
-
+    setLanguage(navigator.language.indexOf("es") > -1 ? "es" : "cat");
   }, []);
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
   }, [showDownArrow]);
 
   const handleScroll = (ev) => {
@@ -50,43 +48,35 @@ export default function Home() {
     } else if (window.scrollY <= 100 && !showDownArrow) {
       setShowDownArrow(true);
     }
-  }
-
+  };
 
   // const t = (copy) => {
   //   return language === 'es' ? translateEs[copy] : translateCat[copy];
   // }
 
-
-
   return (
     <ParallaxProvider>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"></link>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+      ></link>
       <div className="container">
         <div className="header">
           <div className="header-logo-container">
-            <div className="header-title">
-              {'Salvem la renegà!'}
-            </div>
+            <div className="header-title">{"Salvem la renegà!"}</div>
             <div className="header-subtitle">
               {"No a les obres d'un espai natural"}
             </div>
           </div>
           <div className="header-language-container">
             <Link href="/manifest">
-              <div className={`header-language`}>
-                MANIFEST
-              </div>
+              <div className={`header-language`}>MANIFEST</div>
             </Link>
             <Link href="/multimedia">
-              <div className={`header-language`}>
-                MEDIA
-              </div>
+              <div className={`header-language`}>MEDIA</div>
             </Link>
             <Link href="/noticies">
-              <div className={`header-language`}>
-                NOTICIES
-              </div>
+              <div className={`header-language`}>NOTICIES</div>
             </Link>
             {/* <div className={`header-language ${language === 'es' ? 'selected' : ''}`} onClick={() => setLanguage('es')}>
               ES
@@ -99,114 +89,140 @@ export default function Home() {
         <Head>
           <title>Salvem la renegà! 🌿</title>
           <link rel="icon" href="/favicon.ico" />
-
-
         </Head>
 
         <main>
-          <h1 className="title">
-            {t('main-title')}
-          </h1>
-          <h2 className="subtitle">
-            {t('main-subtitle')}
-          </h2>
+          <h1 className="title">{t("main-title")}</h1>
+          <h2 className="subtitle">{t("main-subtitle")}</h2>
           <div className="title-button">
             <div className="social-media-container">
-              <a target="_blank" href={'https://www.instagram.com/salvemlarenega/'}>
-                <img className="social-icon" src={'/instagram.svg'} />
+              <a
+                target="_blank"
+                href={"https://www.instagram.com/salvemlarenega/"}
+              >
+                <img className="social-icon" src={"/instagram.svg"} />
               </a>
-              <a target="_blank" href={'https://www.facebook.com/Salvem-la-Reneg%C3%A0-112553147114111'}>
-                <img className="social-icon" src={'/facebook.svg'} />
+              <a
+                target="_blank"
+                href={
+                  "https://www.facebook.com/Salvem-la-Reneg%C3%A0-112553147114111"
+                }
+              >
+                <img className="social-icon" src={"/facebook.svg"} />
               </a>
-              <a target="_blank" href={'https://www.twitter.com/salvemlarenega'}>
-                <img className="social-icon" src={'/twitter.svg'} />
+              <a
+                target="_blank"
+                href={"https://www.twitter.com/salvemlarenega"}
+              >
+                <img className="social-icon" src={"/twitter.svg"} />
               </a>
             </div>
           </div>
 
-          <div className="sign-button" onClick={() => window.open('https://www.change.org/p/no-al-centro-interpretativo-marino-en-la-reneg%C3%A0-de-oropesa-lareneganosetoca')}>
-            {'Firma NO AL CENTRE INTERPRETATIU'}
+          <div
+            className="sign-button"
+            onClick={() =>
+              window.open(
+                "https://www.change.org/p/no-al-centro-interpretativo-marino-en-la-reneg%C3%A0-de-oropesa-lareneganosetoca"
+              )
+            }
+          >
+            {"Firma NO AL CENTRE INTERPRETATIU"}
           </div>
-          <div className="sign-button" onClick={() => window.open('https://www.change.org/p/consellera-de-agricultura-desarrollo-rural-emergencia-clim%C3%A1tica-y-transici%C3%B3n-ecol%C3%B3gica-declaraci%C3%B3n-de-paisaje-protegido-sierra-y-acantilados-de-oropesa-7b4acbf2-864b-498f-b439-0fcfeb1fbd75?recruiter=40348015&utm_source=share_petition&utm_campaign=psf_combo_share_initial&utm_medium=whatsapp&utm_content=washarecopy_22771468_es-ES%3A3&recruited_by_id=8e364f30-4f6b-0130-a98c-3c764e046f10')}>
-            {'Firma DECLARACIÓ PAISATGE PROTEGIT'}
+          <div
+            className="sign-button"
+            onClick={() =>
+              window.open(
+                "https://www.change.org/p/consellera-de-agricultura-desarrollo-rural-emergencia-clim%C3%A1tica-y-transici%C3%B3n-ecol%C3%B3gica-declaraci%C3%B3n-de-paisaje-protegido-sierra-y-acantilados-de-oropesa-7b4acbf2-864b-498f-b439-0fcfeb1fbd75?recruiter=40348015&utm_source=share_petition&utm_campaign=psf_combo_share_initial&utm_medium=whatsapp&utm_content=washarecopy_22771468_es-ES%3A3&recruited_by_id=8e364f30-4f6b-0130-a98c-3c764e046f10"
+              )
+            }
+          >
+            {"Firma DECLARACIÓ PAISATGE PROTEGIT"}
           </div>
-          <div className="sign-button" onClick={() => window.open('https://salvemrenega.org/manifest')}>
-            {'Adhesió al MANIFEST'}
+          <div
+            className="sign-button"
+            onClick={() => window.open("https://salvemrenega.org/manifest")}
+          >
+            {"Adhesió al MANIFEST"}
           </div>
-
         </main>
-        <Parallax y={[-60, 24]}  >
+        <Parallax y={[-60, 24]}>
           <div className="background-image">
-            <img src='/background-image.svg' />
+            <img src="/background-image.svg" />
           </div>
-        </Parallax >
+        </Parallax>
       </div>
       <div className="body-container">
         <div className="background-gradient-1"></div>
         <div className="background-gradient-2"></div>
 
-        <div className={`arrow-down ${showDownArrow ? '' : 'hide'}`}>
+        <div className={`arrow-down ${showDownArrow ? "" : "hide"}`}>
           <img src="/arrow-down.svg" />
         </div>
         <Fade right>
           <div className="manifest-section">
-            <div className="manifest-section-title">
-              {t('m-title-1')}
-            </div>
-            <div className="manifest-section-text" dangerouslySetInnerHTML={{ __html: t('m-text-1') }} />
+            <div className="manifest-section-title">{t("m-title-1")}</div>
+            <div
+              className="manifest-section-text"
+              dangerouslySetInnerHTML={{ __html: t("m-text-1") }}
+            />
           </div>
         </Fade>
         <Fade left>
           <div className="manifest-section ">
-            <div className="manifest-section-title">
-              {t('m-title-2')}
-            </div>
-            <div className="manifest-section-text" dangerouslySetInnerHTML={{ __html: t('m-text-2') }} />
+            <div className="manifest-section-title">{t("m-title-2")}</div>
+            <div
+              className="manifest-section-text"
+              dangerouslySetInnerHTML={{ __html: t("m-text-2") }}
+            />
           </div>
         </Fade>
         <div className="carousel-container">
-          <Carousel images={photosArray.reverse()}
-            thumb={true}
-            loop={true} />
+          <Carousel images={photosArray.reverse()} thumb={true} loop={true} />
         </div>
         <Fade right>
           <div className="manifest-section ">
-            <div className="manifest-section-title">
-              {t('m-title-3')}
-            </div>
-            <div className="manifest-section-text" dangerouslySetInnerHTML={{ __html: t('m-text-3') }} />
+            <div className="manifest-section-title">{t("m-title-3")}</div>
+            <div
+              className="manifest-section-text"
+              dangerouslySetInnerHTML={{ __html: t("m-text-3") }}
+            />
           </div>
         </Fade>
         <Fade left>
           <div className="manifest-section ">
-            <div className="manifest-section-title">
-              {t('m-title-4')}
-            </div>
-            <div className="manifest-section-text" dangerouslySetInnerHTML={{ __html: t('m-text-4') }} />
+            <div className="manifest-section-title">{t("m-title-4")}</div>
+            <div
+              className="manifest-section-text"
+              dangerouslySetInnerHTML={{ __html: t("m-text-4") }}
+            />
           </div>
         </Fade>
         <Fade right>
           <div className="manifest-section ">
-            <div className="manifest-section-title">
-              {t('m-title-5')}
-            </div>
-            <div className="manifest-section-text" dangerouslySetInnerHTML={{ __html: t('m-text-5') }} />
+            <div className="manifest-section-title">{t("m-title-5")}</div>
+            <div
+              className="manifest-section-text"
+              dangerouslySetInnerHTML={{ __html: t("m-text-5") }}
+            />
           </div>
         </Fade>
         <Fade left>
           <div className="manifest-section ">
-            <div className="manifest-section-title">
-              {t('m-title-6')}
-            </div>
-            <div className="manifest-section-text" dangerouslySetInnerHTML={{ __html: t('m-text-6') }} />
+            <div className="manifest-section-title">{t("m-title-6")}</div>
+            <div
+              className="manifest-section-text"
+              dangerouslySetInnerHTML={{ __html: t("m-text-6") }}
+            />
           </div>
         </Fade>
         <Fade right>
           <div className="manifest-section ">
-            <div className="manifest-section-title">
-              {t('m-title-7')}
-            </div>
-            <div className="manifest-section-text" dangerouslySetInnerHTML={{ __html: t('m-text-7') }} />
+            <div className="manifest-section-title">{t("m-title-7")}</div>
+            <div
+              className="manifest-section-text"
+              dangerouslySetInnerHTML={{ __html: t("m-text-7") }}
+            />
           </div>
           {/* <Fade bottom>
             <video className="start-video" controls={true} autoPlay={true}>
@@ -215,7 +231,6 @@ export default function Home() {
           </Fade> */}
         </Fade>
 
-
         {/* <div className="images-container">
           <img src="/arbol.svg" />
           <img src="/excavadora.svg" />
@@ -223,14 +238,22 @@ export default function Home() {
         </div> */}
         {donationOpen && (
           <div className="modal-pop-up">
-            <div className="modal-pop-up-close" onClick={() => setDonationOpen(false)}>
-              <img src={'/cross.svg'} />
+            <div
+              className="modal-pop-up-close"
+              onClick={() => setDonationOpen(false)}
+            >
+              <img src={"/cross.svg"} />
             </div>
             <div className="modal-pop-up-title">
               {"Ajuda'ns a aturar les obres!"}
             </div>
-            <div className="modal-pop-up-button" onClick={() => window.open('https://paypal.me/pools/c/8rqM9duxy6')}>
-              {'Donar'}
+            <div
+              className="modal-pop-up-button"
+              onClick={() =>
+                window.open("https://paypal.me/pools/c/8rqM9duxy6")
+              }
+            >
+              {"Donar"}
             </div>
           </div>
         )}
@@ -240,167 +263,167 @@ export default function Home() {
       </footer> */}
 
       <style jsx>{`
-         @font-face {
-          font-family: 'Belta';
-          src: url('/fonts/belta-bold.ttf'); 
+        @font-face {
+          font-family: "Belta";
+          src: url("/fonts/belta-bold.ttf");
           font-weight: normal;
           font-style: normal;
           font-display: swap;
         }
 
         @font-face {
-          font-family: 'Inter';
-          font-style:  normal;
+          font-family: "Inter";
+          font-style: normal;
           font-weight: 100;
           font-display: swap;
           src: url("/fonts/Inter-Thin.woff2?v=3.13") format("woff2"),
-               url("/fonts/Inter-Thin.woff?v=3.13") format("woff");
+            url("/fonts/Inter-Thin.woff?v=3.13") format("woff");
         }
         @font-face {
-          font-family: 'Inter';
-          font-style:  italic;
+          font-family: "Inter";
+          font-style: italic;
           font-weight: 100;
           font-display: swap;
           src: url("/fonts/Inter-ThinItalic.woff2?v=3.13") format("woff2"),
-               url("/fonts/Inter-ThinItalic.woff?v=3.13") format("woff");
+            url("/fonts/Inter-ThinItalic.woff?v=3.13") format("woff");
         }
-        
+
         @font-face {
-          font-family: 'Inter';
-          font-style:  normal;
+          font-family: "Inter";
+          font-style: normal;
           font-weight: 200;
           font-display: swap;
           src: url("/fonts/Inter-ExtraLight.woff2?v=3.13") format("woff2"),
-               url("/fonts/Inter-ExtraLight.woff?v=3.13") format("woff");
+            url("/fonts/Inter-ExtraLight.woff?v=3.13") format("woff");
         }
         @font-face {
-          font-family: 'Inter';
-          font-style:  italic;
+          font-family: "Inter";
+          font-style: italic;
           font-weight: 200;
           font-display: swap;
           src: url("/fonts/Inter-ExtraLightItalic.woff2?v=3.13") format("woff2"),
-               url("/fonts/Inter-ExtraLightItalic.woff?v=3.13") format("woff");
+            url("/fonts/Inter-ExtraLightItalic.woff?v=3.13") format("woff");
         }
-        
+
         @font-face {
-          font-family: 'Inter';
-          font-style:  normal;
+          font-family: "Inter";
+          font-style: normal;
           font-weight: 300;
           font-display: swap;
           src: url("/fonts/Inter-Light.woff2?v=3.13") format("woff2"),
-               url("/fonts/Inter-Light.woff?v=3.13") format("woff");
+            url("/fonts/Inter-Light.woff?v=3.13") format("woff");
         }
         @font-face {
-          font-family: 'Inter';
-          font-style:  italic;
+          font-family: "Inter";
+          font-style: italic;
           font-weight: 300;
           font-display: swap;
           src: url("/fonts/Inter-LightItalic.woff2?v=3.13") format("woff2"),
-               url("/fonts/Inter-LightItalic.woff?v=3.13") format("woff");
+            url("/fonts/Inter-LightItalic.woff?v=3.13") format("woff");
         }
-        
+
         @font-face {
-          font-family: 'Inter';
-          font-style:  normal;
+          font-family: "Inter";
+          font-style: normal;
           font-weight: 400;
           font-display: swap;
           src: url("/fonts/Inter-Regular.woff2?v=3.13") format("woff2"),
-               url("/fonts/Inter-Regular.woff?v=3.13") format("woff");
+            url("/fonts/Inter-Regular.woff?v=3.13") format("woff");
         }
         @font-face {
-          font-family: 'Inter';
-          font-style:  italic;
+          font-family: "Inter";
+          font-style: italic;
           font-weight: 400;
           font-display: swap;
           src: url("/fonts/Inter-Italic.woff2?v=3.13") format("woff2"),
-               url("/fonts/Inter-Italic.woff?v=3.13") format("woff");
+            url("/fonts/Inter-Italic.woff?v=3.13") format("woff");
         }
-        
+
         @font-face {
-          font-family: 'Inter';
-          font-style:  normal;
+          font-family: "Inter";
+          font-style: normal;
           font-weight: 500;
           font-display: swap;
           src: url("/fonts/Inter-Medium.woff2?v=3.13") format("woff2"),
-               url("/fonts/Inter-Medium.woff?v=3.13") format("woff");
+            url("/fonts/Inter-Medium.woff?v=3.13") format("woff");
         }
         @font-face {
-          font-family: 'Inter';
-          font-style:  italic;
+          font-family: "Inter";
+          font-style: italic;
           font-weight: 500;
           font-display: swap;
           src: url("/fonts/Inter-MediumItalic.woff2?v=3.13") format("woff2"),
-               url("/fonts/Inter-MediumItalic.woff?v=3.13") format("woff");
+            url("/fonts/Inter-MediumItalic.woff?v=3.13") format("woff");
         }
-        
+
         @font-face {
-          font-family: 'Inter';
-          font-style:  normal;
+          font-family: "Inter";
+          font-style: normal;
           font-weight: 600;
           font-display: swap;
           src: url("/fonts/Inter-SemiBold.woff2?v=3.13") format("woff2"),
-               url("/fonts/Inter-SemiBold.woff?v=3.13") format("woff");
+            url("/fonts/Inter-SemiBold.woff?v=3.13") format("woff");
         }
         @font-face {
-          font-family: 'Inter';
-          font-style:  italic;
+          font-family: "Inter";
+          font-style: italic;
           font-weight: 600;
           font-display: swap;
           src: url("/fonts/Inter-SemiBoldItalic.woff2?v=3.13") format("woff2"),
-               url("/fonts/Inter-SemiBoldItalic.woff?v=3.13") format("woff");
+            url("/fonts/Inter-SemiBoldItalic.woff?v=3.13") format("woff");
         }
-        
+
         @font-face {
-          font-family: 'Inter';
-          font-style:  normal;
+          font-family: "Inter";
+          font-style: normal;
           font-weight: 700;
           font-display: swap;
           src: url("/fonts/Inter-Bold.woff2?v=3.13") format("woff2"),
-               url("/fonts/Inter-Bold.woff?v=3.13") format("woff");
+            url("/fonts/Inter-Bold.woff?v=3.13") format("woff");
         }
         @font-face {
-          font-family: 'Inter';
-          font-style:  italic;
+          font-family: "Inter";
+          font-style: italic;
           font-weight: 700;
           font-display: swap;
           src: url("/fonts/Inter-BoldItalic.woff2?v=3.13") format("woff2"),
-               url("/fonts/Inter-BoldItalic.woff?v=3.13") format("woff");
+            url("/fonts/Inter-BoldItalic.woff?v=3.13") format("woff");
         }
-        
+
         @font-face {
-          font-family: 'Inter';
-          font-style:  normal;
+          font-family: "Inter";
+          font-style: normal;
           font-weight: 800;
           font-display: swap;
           src: url("/fonts/Inter-ExtraBold.woff2?v=3.13") format("woff2"),
-               url("/fonts/Inter-ExtraBold.woff?v=3.13") format("woff");
+            url("/fonts/Inter-ExtraBold.woff?v=3.13") format("woff");
         }
         @font-face {
-          font-family: 'Inter';
-          font-style:  italic;
+          font-family: "Inter";
+          font-style: italic;
           font-weight: 800;
           font-display: swap;
           src: url("/fonts/Inter-ExtraBoldItalic.woff2?v=3.13") format("woff2"),
-               url("/fonts/Inter-ExtraBoldItalic.woff?v=3.13") format("woff");
+            url("/fonts/Inter-ExtraBoldItalic.woff?v=3.13") format("woff");
         }
-        
+
         @font-face {
-          font-family: 'Inter';
-          font-style:  normal;
+          font-family: "Inter";
+          font-style: normal;
           font-weight: 900;
           font-display: swap;
           src: url("/fonts/Inter-Black.woff2?v=3.13") format("woff2"),
-               url("/fonts/Inter-Black.woff?v=3.13") format("woff");
+            url("/fonts/Inter-Black.woff?v=3.13") format("woff");
         }
         @font-face {
-          font-family: 'Inter';
-          font-style:  italic;
+          font-family: "Inter";
+          font-style: italic;
           font-weight: 900;
           font-display: swap;
           src: url("/fonts/Inter-BlackItalic.woff2?v=3.13") format("woff2"),
-               url("/fonts/Inter-BlackItalic.woff?v=3.13") format("woff");
+            url("/fonts/Inter-BlackItalic.woff?v=3.13") format("woff");
         }
-        
+
         /* -------------------------------------------------------
         Variable font.
         Usage:
@@ -411,23 +434,22 @@ export default function Home() {
           }
         */
         @font-face {
-          font-family: 'Inter var';
+          font-family: "Inter var";
           font-weight: 100 900;
           font-display: swap;
           font-style: normal;
-          font-named-instance: 'Regular';
+          font-named-instance: "Regular";
           src: url("/fonts/Inter-roman.var.woff2?v=3.13") format("woff2");
         }
         @font-face {
-          font-family: 'Inter var';
+          font-family: "Inter var";
           font-weight: 100 900;
           font-display: swap;
           font-style: italic;
-          font-named-instance: 'Italic';
+          font-named-instance: "Italic";
           src: url("/fonts/Inter-italic.var.woff2?v=3.13") format("woff2");
         }
-        
-        
+
         /* --------------------------------------------------------------------------
         [EXPERIMENTAL] Multi-axis, single variable font.
         
@@ -442,18 +464,17 @@ export default function Home() {
         
         */
         @font-face {
-          font-family: 'Inter var experimental';
+          font-family: "Inter var experimental";
           font-weight: 100 900;
           font-display: swap;
           font-style: oblique 0deg 10deg;
           src: url("Inter.var.woff2?v=3.13") format("woff2");
         }
-        
 
         .container {
           height: 700px;
           width: 100vw;
-          background: #63B995;
+          background: #63b995;
           padding: 0 16px;
           display: flex;
           flex-direction: column;
@@ -461,14 +482,14 @@ export default function Home() {
         }
 
         .social-icon {
-          width: 40px;   
-          cursor: pointer;   
+          width: 40px;
+          cursor: pointer;
           margin-left: 10px;
-          transition: all .2s;
+          transition: all 0.2s;
         }
 
         .social-icon:hover {
-          filter: drop-shadow(0px 0px 5px rgba(255,255,255, 0.4))
+          filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.4));
         }
 
         .social-media-container {
@@ -494,8 +515,6 @@ export default function Home() {
           align-items: center;
         }
 
-
-
         .images-container img {
           width: 33%;
           margin-bottom: 100px;
@@ -510,7 +529,7 @@ export default function Home() {
           width: 100vw;
         }
 
-        .manifest-section img{
+        .manifest-section img {
           width: 10%;
           left: -50px;
           opacity: 0.4;
@@ -528,7 +547,7 @@ export default function Home() {
           font-weight: 200;
           margin-bottom: 20px;
           font-family: Belta;
-          color: #50723C;
+          color: #50723c;
           font-style: normal;
           text-align: center;
           z-index: 5;
@@ -536,14 +555,22 @@ export default function Home() {
 
         .manifest-section-text {
           text-align: center;
-          color: #423E28;
+          color: #423e28;
           max-width: 800px;
           margin-bottom: 70px;
           z-index: 5;
         }
 
         .background-gradient-1 {
-          background: linear-gradient(179.96deg, #63B995 30.82%, #F9D9B5 36.08%, #63B995 48.96%, #63B995 64.81%, #528FEA 77.35%, rgba(82, 143, 234, 0) 99.95%);
+          background: linear-gradient(
+            179.96deg,
+            #63b995 30.82%,
+            #f9d9b5 36.08%,
+            #63b995 48.96%,
+            #63b995 64.81%,
+            #528fea 77.35%,
+            rgba(82, 143, 234, 0) 99.95%
+          );
           opacity: 0.2;
           height: 1122px;
           width: 100%;
@@ -552,8 +579,15 @@ export default function Home() {
           overflow: hidden;
           top: 0;
         }
-        .background-gradient-2{
-          background: linear-gradient(179.97deg, rgba(130, 192, 149, 0) 0.05%, #63B995 33.51%, #EDA944 62.97%, #F09E25 78.32%, rgba(240, 158, 37, 0) 99.95%);
+        .background-gradient-2 {
+          background: linear-gradient(
+            179.97deg,
+            rgba(130, 192, 149, 0) 0.05%,
+            #63b995 33.51%,
+            #eda944 62.97%,
+            #f09e25 78.32%,
+            rgba(240, 158, 37, 0) 99.95%
+          );
           opacity: 0.2;
           height: 1122px;
           width: 100%;
@@ -570,7 +604,7 @@ export default function Home() {
           margin-left: -200px;
         }
 
-        .background-image img{
+        .background-image img {
           width: 100%;
         }
 
@@ -588,7 +622,7 @@ export default function Home() {
         }
 
         .header-title {
-          font-family: 'Belta';
+          font-family: "Belta";
           font-size: 24px;
           color: white;
           margin-top: 12px;
@@ -598,14 +632,14 @@ export default function Home() {
           margin-top: 12px;
           font-size: 18px;
           cursor: pointer;
-          color: #63B995;
+          color: #63b995;
           background: white;
           border-radius: 5px;
           padding: 10px;
           padding-left: 15px;
           padding-right: 15px;
           z-index: 9;
-          transition: box-shadow .3s ease-in-out;
+          transition: box-shadow 0.3s ease-in-out;
         }
 
         @media (max-width: 764px) {
@@ -618,7 +652,7 @@ export default function Home() {
         }
 
         .sign-button:hover {
-          box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
+          box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.6);
         }
 
         .header-subtitle {
@@ -632,28 +666,28 @@ export default function Home() {
           font-size: 14px;
           line-height: 24px;
           text-transform: uppercase;
-          color: #63B995;
+          color: #63b995;
           border-radius: 2px;
           text-align: center;
           cursor: pointer;
         }
-        
+
         .header-language-container {
           display: flex;
         }
         .header-language {
           z-index: 30;
-          transition: all .2s;
+          transition: all 0.2s;
           cursor: pointer;
           min-width: 40px;
           height: 40px;
-          color: rgba(255,255,255, 0.9);
+          color: rgba(255, 255, 255, 0.9);
           display: flex;
           justify-content: center;
           align-items: center;
           font-size: 12px;
           line-height: 18px;
-          border: 1px solid rgba(255,255,255, 0.9);
+          border: 1px solid rgba(255, 255, 255, 0.9);
           border-radius: 4px;
           padding: 10px;
           margin-left: 8px;
@@ -665,7 +699,7 @@ export default function Home() {
         }
 
         .selected {
-          color: rgba(255,255,255, 1);
+          color: rgba(255, 255, 255, 1);
         }
 
         .hide {
@@ -674,7 +708,7 @@ export default function Home() {
 
         .subtitle {
           z-index: 30;
-          color: #FFFFFC;
+          color: #fffffc;
           opacity: 0.8;
           font-weight: 200;
           font-size: 16px;
@@ -690,7 +724,7 @@ export default function Home() {
         }
 
         footer {
-          background: #FFFFFC;
+          background: #fffffc;
           width: 100%;
           height: 60px;
           border-top: 1px solid #eaeaea;
@@ -720,12 +754,24 @@ export default function Home() {
         }
 
         @keyframes title-movement {
-          0% {transform: scale(1);}
-          10% {transform: scale(1.05);}
-          20% {transform: scale(1);}
-          30% {transform: scale(1.05);}
-          40% {transform: scale(1);}
-          100% {transform: scale(1);}
+          0% {
+            transform: scale(1);
+          }
+          10% {
+            transform: scale(1.05);
+          }
+          20% {
+            transform: scale(1);
+          }
+          30% {
+            transform: scale(1.05);
+          }
+          40% {
+            transform: scale(1);
+          }
+          100% {
+            transform: scale(1);
+          }
         }
 
         .title a:hover,
@@ -735,7 +781,7 @@ export default function Home() {
         }
 
         .title {
-          font-family: 'Belta';
+          font-family: "Belta";
           letter-spacing: 0.2rem;
           z-index: 30;
           font-weight: 100;
@@ -744,7 +790,7 @@ export default function Home() {
 
           color: white;
           animation: title-movement 2s infinite;
-          animation-timing-function: ease-in-out; 
+          animation-timing-function: ease-in-out;
           margin-bottom: 20px;
           width: fit-content;
           text-align: center;
@@ -806,7 +852,7 @@ export default function Home() {
         .logo {
           height: 1em;
         }
-        
+
         .start-video {
           z-index: 999;
           height: 80vh;
@@ -824,7 +870,7 @@ export default function Home() {
           z-index: 2;
         }
 
-        .arrow-down img{
+        .arrow-down img {
           width: 30px;
           z-index: -1;
           animation: title-movement 2s infinite;
@@ -840,14 +886,14 @@ export default function Home() {
           right: 24px;
           width: 300px;
           height: 150px;
-          background: rgba(255,255,255,0.8);
+          background: rgba(255, 255, 255, 0.8);
           backdrop-filter: blur(16px);
           display: flex;
           flex-direction: column;
           justify-content: space-between;
         }
 
-        .modal-pop-up-close img{
+        .modal-pop-up-close img {
           width: 16px;
           height: 16px;
         }
@@ -861,8 +907,8 @@ export default function Home() {
 
         .modal-pop-up-title {
           margin-top: 12px;
-          color: #63B995;
-          font-family: 'Belta';
+          color: #63b995;
+          font-family: "Belta";
           font-size: 28px;
           margin-bottom: 8px;
           text-align: center;
@@ -872,7 +918,7 @@ export default function Home() {
           cursor: pointer;
           width: 100%;
           color: white;
-          background: #63B995;
+          background: #63b995;
           padding: 6px;
           text-align: center;
           border-radius: 4px;
@@ -920,7 +966,7 @@ export default function Home() {
         }
       `}</style>
     </ParallaxProvider>
-  )
+  );
 }
 
 i18n
@@ -928,17 +974,17 @@ i18n
   .init({
     resources: {
       cat: { translation: translateCat },
-      es: { translation: translateEs }
+      es: { translation: translateEs },
     },
     react: {
       transSupportBasicHtmlNodes: true,
-      transKeepBasicHtmlNodesFor: ['br', 'strong', 'i'],
+      transKeepBasicHtmlNodesFor: ["br", "strong", "i"],
       useSuspense: true,
     },
     lng: "cat",
     fallbackLng: "cat",
-    transEmptyNodeValue: '',
+    transEmptyNodeValue: "",
     interpolation: {
-      escapeValue: false
-    }
+      escapeValue: false,
+    },
   });

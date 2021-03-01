@@ -6,6 +6,7 @@ import { translateCat } from "../../translations/cat";
 import { useEffect, useState } from "react";
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 const urlNews = [
   {
@@ -193,21 +194,33 @@ export default function News() {
       </div>
       <div className="new-section-container">
         <div className="section-title-container">Noticies i Articles:</div>
-        <div className="news-container">
-          {urlNews.map((newItem) => (
-            <div
-              className="new-container"
-              onClick={() => window.open(newItem.link)}
-            >
-              <div className="new-image">
-                <img src={newItem.image} />
+        {/* <div className="news-container"> */}
+        <ResponsiveMasonry
+          columnsCountBreakPoints={{
+            350: 1,
+            740: 2,
+            1000: 3,
+            1370: 4,
+            1600: 5,
+          }}
+        >
+          <Masonry>
+            {urlNews.map((newItem) => (
+              <div
+                className="new-container"
+                onClick={() => window.open(newItem.link)}
+              >
+                <div className="new-image">
+                  <img src={newItem.image} />
+                </div>
+                <div className="new-title">{newItem.title}</div>
+                <div className="new-desc">{newItem.description}</div>
+                <div className="new-source">{newItem.source}</div>
               </div>
-              <div className="new-title">{newItem.title}</div>
-              <div className="new-desc">{newItem.description}</div>
-              <div className="new-source">{newItem.source}</div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </Masonry>
+        </ResponsiveMasonry>
+        {/* </div> */}
       </div>
       <script
         async
@@ -432,7 +445,7 @@ export default function News() {
           min-height: 100vh;
         }
         .new-section-container {
-          margin-left: 8%;
+          margin-left: 40px;
           z-index: 30;
         }
 
@@ -453,6 +466,9 @@ export default function News() {
           .news-container {
             grid-template-columns: 1fr;
           }
+          .new-section-container {
+            margin-left: 12px;
+          }
         }
 
         .new-container {
@@ -460,7 +476,7 @@ export default function News() {
           margin-bottom: 32px;
           background: rgba(255, 255, 255, 0.1);
           border-radius: 10px;
-          max-width: 340px;
+          max-width: 300px;
           width: 80vw;
           height: fit-content;
         }
@@ -475,7 +491,7 @@ export default function News() {
         }
 
         .new-image img {
-          max-width: 340px;
+          max-width: 300px;
           width: 80vw;
           margin-bottom: 8px;
           border-top-right-radius: 10px;
@@ -483,7 +499,7 @@ export default function News() {
         }
 
         .new-title {
-          max-width: 340px;
+          max-width: 300px;
           color: white;
           margin-bottom: 8px;
           margin-right: 12px;
@@ -491,7 +507,7 @@ export default function News() {
         }
 
         .new-desc {
-          max-width: 340px;
+          max-width: 300px;
           font-weight: 200;
           font-size: 12px;
           color: white;
