@@ -484,7 +484,13 @@ export default function Home() {
         .container {
           height: 700px;
           width: 100vw;
-          background: #63b995;
+          opacity: 0.9;
+          background: linear-gradient(
+            180deg,
+            rgba(99, 185, 149, 1) 0%,
+            rgba(99, 185, 149, 1) 60%,
+            rgba(186, 216, 218, 1) 100%
+          );
           padding: 0 16px;
           display: flex;
           flex-direction: column;
@@ -688,6 +694,7 @@ export default function Home() {
           border-radius: 2px;
           text-align: center;
           cursor: pointer;
+          z-index: 99;
         }
 
         .header-language-container {
