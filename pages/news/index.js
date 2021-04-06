@@ -9,7 +9,78 @@ import { useTranslation, initReactI18next } from "react-i18next";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 const urlNews = [
-  {
+  { //06-04-2021
+    title:
+      "Orpesa pedirá que el entorno de la vía verde sea paraje natural municipal",
+    link:
+      "https://estaticos-cdn.prensaiberica.es/clip/a045810e-1219-4fe8-8b26-47be7904b3f2_16-9-discover-aspect-ratio_default_1036254.jpg",
+    image:
+      "https://estaticos-cdn.prensaiberica.es/clip/a045810e-1219-4fe8-8b26-47be7904b3f2_16-9-discover-aspect-ratio_default_1036254.jpg",
+    description: `El área de Medio Ambiente del Ayuntamiento de Orpesa va a iniciar los trámites para poder solicitar la declaración del entorno de la vía verde como paraje natural municipal, que es una de las siete figuras legales para proteger un espacio ambiental que incluye la legislación en la Comunitat.`,
+    source: "El Periódico Mediterráneo",
+  },
+  { //26-03-2021
+    title:
+      "La Generalitat presenta un recurso contra la anulación del Pativel",
+    link:
+      "https://valenciaplaza.com/la-generalitat-presenta-un-recurso-contra-la-anulacion-del-pativel",
+    image:
+      "https://valenciaplaza.com/public/Image/2021/3/16130641342_NoticiaAmpliada_NoticiaAmpliada.jpg",
+    description: `La Abogacía de la Generalitat Valenciana ha presentado un recurso ante la Sección Primera de la Sala de lo Contencioso-Administrativo del Tribunal Superior de Justicia de la Comunitat Valenciana (TSJCV) contra la anulación del Plan de Acción Territorial de la Infraestructura Verde del Litoral (Pativel), según confirman a este diario fuentes del Consell. `,
+    source: "Valencia Plaza",
+  },
+  { //25-03-2021
+    title:
+      "Una anàlisi social, jurídica i política de la sentència que anul·la el pla de protecció del litoral valencià",
+    link:
+      "https://directa.cat/una-analisi-social-juridica-i-politica-de-la-sentencia-que-anulla-el-pla-de-proteccio-del-litoral-valencia/",
+    image:
+      "https://directa.cat/app/uploads/2021/03/CostaValencianaWeb-1.jpg",
+    description: `La sentència que declara nul el Pla d’Acció Territorial de la Infraestructura Verd del Litoral (PATIVEL) no és ferma. Serà recorreguda davant instància superior, en principi, en el Tribunal Suprem. Per tant, els seus efectes segueixen en peu i els seus terminis no s’interrompen. La sentència s’ha dictat per una sala contenciosa administrativa composta per tres magistrats.`,
+    source: "La Directa",
+  },
+  { //22-03-2021
+    title:
+      "Denúncia per possibles delictes ambientals en resposta a la represa de les obres a la serra de la Renegà",
+    link:
+      "https://directa.cat/denuncia-per-delictes-ambientals-en-resposta-a-la-represa-de-les-obres-a-la-serra-de-la-renega/",
+    image:
+      "https://directa.cat/app/uploads/2021/03/DSC_6575.jpg",
+    description: `Segons la denúncia, presentada per la Plataforma Salvem la Renegà i l'entitat ecologista GECEN davant la Fiscalia de Medi Ambient de Castelló, la constructora Costa Bellver SA, de l’empresari Eugenio Calabuig, estaria efectuant moviments de terra sense autorització municipal ni cap classe d’avaluació ambiental sobre el barranc del Diable en el marc del projecte urbanístic que pretén construir a la serra de la Renegà, un fet que segons les expertes en medi ambient podria provocar inundacions i posar en risc la seguretat de les persones`,
+    source: "La Directa",
+  },
+  { //11-03-2021
+    title:
+      "Oropesa incorpora casi 11 millones de los remanentes para inversiones",
+    link:
+      "http://todooropesa.com/sociedad/oropesa-incorpora-casi-11-millones-de-los-remanentes-para-inversiones",
+    image:
+      "http://todooropesa.com/wp-content/uploads/2021/03/Pleno-telematico-2-Medium.jpg",
+    description: `La otra moción aprobada, en este caso con los votos a favor de PSOE, Compromís y las abstenciones de PP y Ciudadanos, corresponde a la protección de La Renegà. En esta, se establece regular la circulación de vehículos a motor dentro del mencionado espacio e iniciar los trámites para que La Renegà sea catalogada como paraje natural municipal.`,
+    source: "Todo Oropesa",
+  },
+  { //11-03-2021
+    title:
+      "Reanudan las obras para la construcción del Centro del Mediterráneo",
+    link:
+      "http://todooropesa.com/urbanismo/reanudan-las-obras-para-la-construccion-del-centro-del-mediterraneo",
+    image:
+      "http://todooropesa.com/wp-content/uploads/2021/03/obras_centro_interpretacion_mediterraneo_tortugas_via_verde_torre_bellver_oropesa.jpeg",
+    description: `Las obras para la construcción del Centro de Interpretación del Mediterráneo se han retomado en las últimas semanas, tras haber obtenido la correspondiente licencia por parte del Ayuntamiento, después de meses de espera.
+    «Les dimos la licencia porque cumplían todos los requisitos de la ley», según indicó Jiménez. El espacio se encuentra ubicado en la franja oeste de la vía verde, que está considerada como urbana en el PGOU, en la urbanización Torre Bellver.`,
+    source: "Todo Oropesa",
+  },
+  { //08-03-2021
+    title:
+      "Proteger el paisaje",
+    link:
+      "https://www.elmundo.es/comunidad-valenciana/castellon/2021/03/08/604681e4fdddffd7638b457b.html",
+    image:
+      "https://phantom-elmundo.unidadeditorial.es/ca644b37c28b2c1d846abc3a77091587/resize/550/f/webp/assets/multimedia/imagenes/2021/03/08/16152285326313.jpg",
+    description: `Y NO llueve a gusto de todos en los confines de Benicàssim. Belén Robledo, portavoz de Salvem la Renegà, rechaza la saturación urbanística de la zona anexa a la vía verde entre les Platgetes de Bellver y Orpesa. La ejecución debe hacerse con lupa en un lugar tan sensible como este. Un paseo marítimo, un centro de interpretación, un hotel y muchas viviendas en una zona declarada urbanizable.`,
+    source: "El Mundo",
+  },
+  { //26-02-2021
     title:
       "'Salvem La Renegà' emprén noves protestes en defensa del territori i exigeix la seua protecció",
     link:
@@ -18,6 +89,48 @@ const urlNews = [
       "https://castellonplaza.com/public/Image/2021/2/WhatsAppImage2021-02-26at12.38.034_NoticiaAmpliada.jpg",
     description: `CASTELLÓ. Al crit de "la Renegà no es toca" o "més protecció, menys excavació" i amb el soroll de les casserolades de fons, la plataforma Salvem la Renegà ha emprés noves protestes per la represa de les obres en la zona de Torre Bellver i s'ha reunit aquest divendres enfront de les dependències de Medi Ambient de la Diputació de Castelló. I és que el grup ecologista no cessa en la seua lluita per protegir el paratge de la Renegà, pròxim a la Via Verda que uneix Orpesa i Benicàssim, i que és considerat Lloc d'Importància Comunitària (LIC).`,
     source: "Castellón Plaza",
+  },
+
+  { //23-02-2021
+    title:
+      "Serna Lorente, els promoters del sol i la platja que han tombat la protecció del litoral Valencià",
+    link:
+      "https://directa.cat/serna-lorente-els-promotors-del-sol-i-platja-que-han-tombat-la-proteccio-del-litoral-valencia/",
+    image:
+      "https://directa.cat/app/uploads/2021/02/COB427760-1024x576.jpg",
+    description: `Els Serna Lorente, una de les nissagues amb més sòl urbanitzable al País Valencià, han aconseguit anul·lar el Pla d’Acció Territorial de la Infraestructura Verda del Litoral (PATIVEL), que protegia de la rajola 7.500 hectàrees, a través d'un recurs en què al·legaven la manca d'informes del pla, el qual posava fre a un dels projectes més ambiciosos de l'empresa familiar, TM Grupo Immobiliario`,
+    source: "La Directa",
+  },
+  { //13-02-21
+    title:
+      "La nulidad del Pativel abre la puerta a construir más de 20.000 viviendas",
+    link:
+      "https://www.lasprovincias.es/comunitat/nulidad-pativel-abre-20210212190115-nt.html",
+    image:
+      "https://static.lasprovincias.es/www/multimedia/202102/12/media/cortadas/ba%c3%b1ista-REbz5GE7A90uQnqb8LyZKjM-624x385@Las%20Provincias.jpg",
+    description: `A estas actuaciones se suman otras que tuvieron que aparcarse como el sector MR-10 de la Marina de Elche (1.200 viviendas), Benicàssim Golf (3.000) o La Renegà en Oropesa (1.000).`,
+    source: "Las Provincias",
+  },
+
+  { //12-02-21
+    title:
+      "Orpesa creará 2 grandes parkings entre la Vía Verde y la Concha, y en la Renegà",
+    link:
+      "https://www.elperiodicomediterraneo.com/comarcas/2021/02/12/orpesa-creara-2-grandes-parkings-40545285.html",
+    image:
+      "https://estaticos-cdn.prensaiberica.es/clip/55d23ce0-cc9c-442f-9757-09bb9f9c79cc_16-9-aspect-ratio_default_0.jpg",
+    description: `El Ayuntamiento de Orpesa adecuará dos grandes parkings que beneficiarán al sector turístico: uno de ellos se emplazará entre la Vía Verde y la playa de La Concha y el otro, a la entrada de la Renegà.`,
+    source: "El Periodico Mediterraneo",
+  },
+  { //11-02-2021
+    title:
+      "'El TSJCV declara nulo el Pativel y la Generalitat anuncia que presentará un recurso de casación a la sentencia",
+    link:
+      "https://www.castelloninformacion.com/tsjcv-declara-nulo-pativel-y-la-gva-recurrira/",
+    image:
+      "https://www.castelloninformacion.com/wp-content/uploads/2017/02/Almassora-PATIVEL-710x333.jpg",
+    description: `A primera hora de esta tarde se conoció que la Sección Primera de la Sala de lo Contencioso-Administrativo del Tribunal Superior de Justicia de la Comunidad Valenciana (TSJCV) ha declarado nulo, por ser contrario a derecho, el Plan de Acción Territorial de la Infraestructura Verde del Litoral, Pativel, de la Comunitat Valenciana, aprobado por decreto del Consell el 4 de mayo de 2018.`,
+    source: "Castellón Información",
   },
   {
     title:
