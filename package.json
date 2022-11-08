@@ -10,7 +10,7 @@
   "dependencies": {
     "i18next": "^19.4.4",
     "link-preview-js": "^2.0.4",
-    "next": "9.3.6",
+    "next": "13.0.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-i18next": "^11.4.0",
